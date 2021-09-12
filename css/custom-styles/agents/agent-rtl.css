@@ -1,0 +1,19 @@
+/*start agents*/
+.address-list li {
+    float: right;
+}
+
+.address-list li .rtl-phone {
+    direction: ltr !important;
+    color: #5277A3
+}
+
+.address-list li span {
+    padding-left: 20px;
+    float: right;
+}
+
+.sidebar-content-right .btn.v8 {
+    margin-left: 10px;
+}
+/*end agents*/

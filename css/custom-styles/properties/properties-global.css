@@ -1,0 +1,93 @@
+/*start properties content --grid-view*/
+.nice-select .option:hover {
+    background-color: #FFAD39;
+}
+
+.global-filter-form > .container > .row {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.properties-content .item-filter-list li a:hover,
+.properties-content .item-filter-list li a.active {
+    color: #FFAD39;
+    border: 1px solid #FFAD39;
+}
+
+.properties-content .filter-sorting {
+    width: 70%;
+}
+
+.properties-content .single-property-box {
+    margin-bottom: 40px;
+}
+/*end properties content --grid-view*/
+
+
+/*start properties content --list-view*/
+#list-view .single-property-box .property-title-box {
+    padding: 20px !important;
+}
+
+#list-view .single-property-box .property-location {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
+
+#list-view .view-prop-btn {
+    position: relative;
+    top: 20px;
+}
+
+#list-view .view-prop-btn .btn {
+    position: absolute;
+    width: 200px;
+}
+
+#list-view .single-property-box .trending-bottom {
+    padding: 20px 0 0;
+}
+/*end properties content --list-view*/
+
+
+
+/*start media queries*****/
+@media only screen and (max-width: 991px) {
+    .property-feature li span {
+        font-size:  12px;
+    }
+
+    #list-view .view-prop-btn .btn {
+        width: auto;
+        padding: 5px 20px !important;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .properties-content {
+        padding-top: 0 !important;
+    }
+
+    .properties-content .view-filter {
+        display: none;
+    }
+
+    #grid-view .hero__form.v1 .explore__form-checkbox-list.full-filter .row > div {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #list-view .view-prop-btn {
+        top: 0;
+    }
+
+    #list-view .view-prop-btn .btn {
+        position: relative;
+        right: 0;
+        left: 0;
+    }
+
+}
+/*end media queries*****/

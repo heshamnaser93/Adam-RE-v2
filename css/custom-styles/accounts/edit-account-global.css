@@ -1,0 +1,91 @@
+/*start edit account*/
+.list-details-section {
+    background: #F6F7F9;
+}
+
+.list-details-section .big-container {
+    background-color: #fff;
+    padding: 30px 100px;
+}
+
+.filter-input {
+    margin-top: 0;
+}
+
+.add-listing__input-file-wrap {
+    background-color: #EFF3F6;
+}
+
+.add-listing__input-file {
+    height: 250px;
+}
+
+.list-details-section .select2.select2-container {
+    margin: 0 !important;
+}
+
+.list-details-section .select2 .selection .select2-selection .select2-selection__rendered {
+    background-color: #EFF3F6 !important;
+    padding: 7px 20px !important;
+}
+
+.list-details-section .select2 .selection .select2-selection .select2-selection__rendered:after {
+    top: 8px;
+}
+
+.btn.v8 {
+    top: 35px;
+}
+/*end edit account*/
+
+
+
+/*start media queries***********/
+@media screen and (min-width: 992px) {
+    .list-details-section {
+        padding-top: 150px !important;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .list-details-section {
+        padding-top: 170px !important;
+    }
+
+    .list-details-section .big-container {
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 991px) and (min-width: 768px){
+    .add-listing__input-file-wrap p {
+        font-size: 13px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .list-details-section .outer-btn-box .form-group {
+        padding-top: 40px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .date_input {
+        margin: 35px auto 20px !important;
+    }
+
+    .col-md-4.select_input {
+        margin-bottom: 30px !important;
+    }
+
+    .btn.v8 {
+        top: 5px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .list-details-section {
+        padding-top: 100px !important;
+    }
+}
+/*end media queries***********/

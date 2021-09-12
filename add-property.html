@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+<head>
+    <!-- Metas -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="LionCoders" />
+    <!-- Links -->
+    <link rel="icon" type="image/png" href="images/icons/fave_icon.ico" />
+    <!-- google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+    <!-- Plugins CSS -->
+    <link href="css/plugin.css" rel="stylesheet" />
+    <!-- style CSS -->
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- Document Title -->
+    <title>Adam Real-Estate | Add Property</title>
+    <!-- Font style -->
+    <link href="https://fonts.googleapis.com/css?family=Mukta&display=swap" rel="stylesheet">
+    <!-- Select 2 -->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.0.12/dist/css/select2.min.css" rel="stylesheet" />
+    <!-- Custom Styles -->
+    <link href="css/custom-styles/global/global.css" rel="stylesheet" />
+    <link href="css/custom-styles/global/global-ltr.css" rel="stylesheet" />
+    <link href="css/custom-styles/header/header-global.css" rel="stylesheet" />
+    <link href="css/custom-styles/header/header-ltr.css" rel="stylesheet" />
+    <link href="css/custom-styles/footer/footer-global.css" rel="stylesheet" />
+    <link href="css/custom-styles/footer/footer-ltr.css" rel="stylesheet" />
+    <link href="css/custom-styles/properties/add-property-global.css" rel="stylesheet" />
+    <link href="css/custom-styles/properties/add-property-ltr.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!--Preloader starts-->
+    <div class="preloader js-preloader">
+        <img src="images/preloader.gif" alt="...">
+    </div>
+    <!--Preloader ends-->
+
+
+    <!--Page Wrapper starts-->
+    <div class="page-wrapper">
+        <!--header starts-->
+        <header class="header transparent scroll-hide">
+            <!--Header Top Section Starts-->
+            <div class="header-top-section">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-sm-4 col-12 header-dropdowns">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="select-lang nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown09" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">English</a>
+                                        <div class="dropdown-menu" aria-labelledby="dropdown09">
+                                            <a class="dropdown-item" href="add-property-rtl.html">Arabic</a>
+                                            <a class="dropdown-item" href="#">Turkish</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="select-curr">
+                                        <select class="js-example-basic-single select2-header" name="state">
+                                            <option value="AL">TRY</option>
+                                            <option value="WY">USD</option>
+                                            <option value="WY">Euro</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-sm-8 col-12 contact-links">
+                            <div class="header-top-center">
+                                <ul>
+                                    <li><i class="fa fa-phone"></i> <a href="https://wa.me/905522222265">+90 552 222 2265</a></li>
+                                    <li><i class="fas fa-envelope-open-text"></i><a href="https://info@adam-gr.com">info@adam-gr.com</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4 col-12 login-dropdown">
+                            <div class="menu-btn">
+                                <div class="add-list">
+                                    <a id="login_btn_id" class="login-btn"><i class="fas fa-user-circle"></i>Login<i class="fas fa-chevron-down arr-down-icon"></i></a>
+                                    <ul class="dropdown login-drop">
+                                        <li><a href="accounts.html">Profile</a></li>
+                                        <li><a href="add-property.html">Add Property</a></li>
+                                        <li><a href="properties.html">Properties</a></li>
+                                        <li><a href="#" data-toggle="modal" data-target="#user-login-popup">Logout</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Header Top Section Ends-->
+
+            <!--Main Menu starts-->
+            <div class="site-navbar-wrap v2">
+                <div class="container">
+                    <div class="site-navbar">
+                        <div class="row align-items-center">
+                            <div class="col-lg-2 col-sm-4 col-6">
+                                <a class="navbar-brand" href="index.html">
+                                    <img src="images/white-logo.png" alt="logo" class="img-fluid fluid-second">
+                                </a>
+                            </div>
+                            <div class="col-lg-8 col-sm-8 col-6 order-2 order-lg-1 pl-xs-0">
+                                <nav class="site-navigation text-center">
+                                    <div class="container">
+                                        <ul class="site-menu js-clone-nav d-none d-lg-block">
+                                            <li class="has-children">
+                                                <a href="index.html">Home</a>
+                                            </li>
+                                            <li class="has-children">
+                                                <a class="active" href="properties.html">Properties</a>
+                                            </li>
+                                            <li class="has-children">
+                                                <a href="news.html">News</a>
+                                            </li>
+                                            <li class="has-children">
+                                                <a href="about.html">About</a>
+                                            </li>
+                                            <li class="has-children">
+                                                <a href="contact.html">Contact</a>
+                                            </li>
+                                            <li class="login-drop-container">
+                                                <a id="menu_login_btn_id" class="login-btn">
+                                                    <img src="images/agents/agent_1.jpg" class="login-img"/>
+                                                    Tarek Alsabony
+                                                    <i class="fas fa-chevron-down arr-down-icon"></i>
+                                                </a>
+                                                <ul class="dropdown login-drop hide-drop">
+                                                    <li><a href="accounts.html">Profile</a></li>
+                                                    <li><a href="add-property.html">Add Property</a></li>
+                                                    <li><a href="properties.html">Properties</a></li>
+                                                    <li><a href="#" data-toggle="modal" data-target="#user-login-popup">Logout</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <div class="add-prop-btn-box">
+                                                    <a class="btn v1" href="add-property.html"><i class="lnr lnr-home"></i>Add Property</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <ul class="menu-social-buttons">
+                                                    <li><a href="https://www.instagram.com/adam4it/"><i class="fab fa-instagram"></i></a></li>
+                                                    <li><a href="https://www.youtube.com/channel/UCfSzzEmPr9PtyGW2RtuEYJw"><i class="fab fa-youtube"></i></a></li>
+                                                    <li><a href="https://www.facebook.com/Adam4IT/"><i class="fab fa-facebook-f"></i></a></li>
+                                                    <li><a href="https://twitter.com/Adam4It"><i class="fab fa-twitter"></i></a></li>
+                                                    <li><a href="https://wa.me/905522222265"><i class="fab fa-whatsapp"></i></a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </nav>
+
+                                <div class="d-lg-none sm-right menu-icn">
+                                    <a href="#" class="mobile-bar js-menu-toggle">
+                                        <span class="lnr lnr-menu"></span>
+                                    </a>
+                                </div>
+                                <!--mobile-menu starts -->
+                                <div class="site-mobile-menu">
+                                    <div class="site-mobile-menu-header">
+                                        <div class="site-mobile-menu-close  js-menu-toggle">
+                                            <span class="lnr lnr-cross"></span> </div>
+                                    </div>
+
+                                    <div class="header-dropdowns">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="select-lang nav-item dropdown col-6">
+                                                    <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown10" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">English</a>
+                                                    <div class="dropdown-menu" aria-labelledby="dropdown09">
+                                                        <a class="dropdown-item" href="add-property-rtl.html">Arabic</a>
+                                                        <a class="dropdown-item" href="#">Turkish</a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="select-curr col-6">
+                                                    <select class="js-example-basic-single select2-header" name="state">
+                                                        <option value="AL">TRY</option>
+                                                        <option value="WY">USD</option>
+                                                        <option value="WY">Euro</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="site-mobile-menu-body"></div>
+
+                                    <div class="header-bottom-contact">
+                                        <ul>
+                                            <li><i class="fas fa-envelope-open-text"></i><a href="https://info@adam-gr.com">info@adam-gr.com</a></li>
+                                            <li><i class="fa fa-phone"></i> <a href="https://wa.me/905522222265">+90 552 222 2265</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!--mobile-menu ends-->
+                            </div>
+                            <div class="col-lg-2 col-4 order-1 order-lg-2 text-right pr-xs-0 add-prop-btn">
+                                <div class="menu-btn">
+                                    <div class="add-list">
+                                        <a class="btn v1" href="add-property.html"><i class="lnr lnr-home"></i>Add Property</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Main Menu ends-->
+        </header>
+        <!--Header ends-->
+
+
+        <!--Add Listing starts-->
+        <div class="list-details-section section-padding add_list pt-100 add-property">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul class="nav nav-tabs list-details-tab main-tabs">
+                            <li class="nav-item active">
+                                <a data-toggle="tab" href="#property"><span class="tab-num" data-toggle="tab" href="#property">1</span>Property</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a data-toggle="tab" href="#characteristics"><span class="tab-num" data-toggle="tab" href="#Characteristics">2</span>Characteristics</a>
+                            </li>
+                            <li class="nav-item">
+                                <a data-toggle="tab" href="#translation"><span class="tab-num" data-toggle="tab" href="#translation">3</span>Translation</a>
+                            </li>
+                        </ul>
+                        <form action="">
+                            <div class="tab-content my-30 add_list_content">
+                                <div class="tab-pane fade show active" id="property">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label>Property Number</label>
+                                                <input type="text" class="form-control filter-input" placeholder="Sea View Apartment">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label>Name Property</label>
+                                                <input type="text" class="form-control filter-input" placeholder="Address of your property">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label>Property Type</label>
+                                                <input type="text" class="form-control filter-input" placeholder="Andersonville">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 select_input">
+                                            <label>Category</label>
+                                            <select class="js-example-basic-single jSelectBox" name="state">
+                                                <option>Cat 1</option>
+                                                <option>Cat 2</option>
+                                                <option>Cat 3</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-4 select_input">
+                                            <label>Country</label>
+                                            <select class="js-example-basic-single jSelectBox" name="state">
+                                                <option>Turkey</option>
+                                                <option>Qatar</option>
+                                                <option>Italy</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-4 select_input">
+                                            <label>City</label>
+                                            <select class="js-example-basic-single jSelectBox" name="state">
+                                                <option>Istanbul</option>
+                                                <option>Doha</option>
+                                                <option>Roma</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-4 select_input">
+                                            <label>Region</label>
+                                            <select class="js-example-basic-single jSelectBox" name="state">
+                                                <option>New York</option>
+                                                <option>Florida</option>
+                                                <option>Las Vegas</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-4 select_input">
+                                            <label>Year Of Construction</label>
+                                            <select class="js-example-basic-single jSelectBox" name="state">
+                                                <option>2020</option>
+                                                <option>2019</option>
+                                                <option>2018</option>
+                                                <option>2017</option>
+                                                <option>2016</option>
+                                                <option>2015</option>
+                                                <option>2014</option>
+                                                <option>2013</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-4 select_input">
+                                            <label>Delivery Date</label>
+                                            <select class="js-example-basic-single jSelectBox" name="state">
+                                                <option>2021</option>
+                                                <option>2022</option>
+                                                <option>2023</option>
+                                                <option>2024</option>
+                                                <option>2025</option>
+                                                <option>2026</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-4 select_input">
+                                            <label>Payment Type</label>
+                                            <select class="js-example-basic-single jSelectBox" name="state">
+                                                <option>Cash</option>
+                                                <option>Master</option>
+                                                <option>Credit</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-4 select_input">
+                                            <label>Currency</label>
+                                            <select class="js-example-basic-single jSelectBox" name="state">
+                                                <option>USD</option>
+                                                <option>TRY</option>
+                                                <option>Euro</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label>Address</label>
+                                                <input type="text" class="form-control filter-input" placeholder="Address">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label>Map Title</label>
+                                                <input type="text" class="form-control filter-input" placeholder="Map">
+                                            </div>
+
+                                            <div class="contact-map v1">
+                                                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2965.0824050173574!2d-93.63905729999999!3d41.998507000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sWebFilings%2C+University+Boulevard%2C+Ames%2C+IA!5e0!3m2!1sen!2sus!4v1390839289319"  style="border:0"></iframe>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label>Distance to the beach</label>
+                                                <input type="text" class="form-control filter-input" placeholder="Distance to the beach">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label>Distance to the center</label>
+                                                <input type="text" class="form-control filter-input" placeholder="Distance to the center">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label>Distance to the airport</label>
+                                                <input type="text" class="form-control filter-input" placeholder="Distance to the airport">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="container">
+                                                <div class="row dash-heading room-dash">
+                                                    <span class="col-lg-11 col-md-10 col-8 add-span">Room</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 select_input">
+                                            <label>Rooms</label>
+                                            <select class="js-example-basic-single jSelectBox" name="state">
+                                                <option>1+1</option>
+                                                <option>2+1</option>
+                                                <option>3+1</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label>Price From</label>
+                                                <input type="number" class="form-control filter-input" placeholder="from">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label>To</label>
+                                                <input type="number" class="form-control filter-input" placeholder="to">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 select_input">
+                                            <label>Bathrooms</label>
+                                            <select class="js-example-basic-single jSelectBox" name="state">
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label>Area From</label>
+                                                <input type="number" class="form-control filter-input" placeholder="from">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label>To</label>
+                                                <input type="number" class="form-control filter-input" placeholder="to">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label for="list_info">Notes</label>
+                                                <textarea class="form-control" id="list_info" rows="1" placeholder="Notes"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <button class="btn col-md-2 col-4 del-btn"><i class="fas fa-trash-alt"></i>Delete</button>
+                                                    <button class="btn col-lg-1 col-md-2 col-4 add-btn"><i class="fas fa-plus"></i>Add</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 upload_inputs">
+                                            <div class="dash-heading">pdf files</div>
+                                            <div class="form-group">
+                                                <div class="add-listing__input-file-box">
+                                                    <input class="add-listing__input-file" type="file" name="file">
+                                                    <div class="add-listing__input-file-wrap">
+                                                        <i class="lnr lnr-cloud-upload"></i>
+                                                        <p>Click here to upload your Files</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 upload_inputs">
+                                            <div class="dash-heading">Floor Plans</div>
+                                            <div class="form-group">
+                                                <div class="add-listing__input-file-box">
+                                                    <input class="add-listing__input-file" type="file" name="file">
+                                                    <div class="add-listing__input-file-wrap">
+                                                        <i class="lnr lnr-cloud-upload"></i>
+                                                        <p>Click here to upload your images</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 upload_inputs">
+                                            <div class="dash-heading">Add Photos</div>
+                                            <div class="form-group">
+                                                <div class="add-listing__input-file-box">
+                                                    <input class="add-listing__input-file" type="file" name="file">
+                                                    <div class="add-listing__input-file-wrap">
+                                                        <i class="lnr lnr-cloud-upload"></i>
+                                                        <p>Click here to upload your images</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 next-page-li">
+                                            <a class="btn v8 next-btn">
+                                                Next<i class="fas fa-arrow-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane fade" id="characteristics">
+                                    <div class="row">
+                                        <div class="col-md-12 mb-5">
+                                            <div class="dash-heading">Building Features</div>
+                                            <div class="filter-checkbox">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="form-group col-sm-3 col-6">
+                                                            <input id="check-a" type="checkbox" name="check">
+                                                            <label for="check-a">Feature</label>
+                                                        </div>
+                                                        <div class="form-group col-sm-3 col-6">
+                                                            <input id="check-b" type="checkbox" name="check">
+                                                            <label for="check-b">Feature</label>
+                                                        </div>
+                                                        <div class="form-group col-sm-3 col-6">
+                                                            <input id="check-c" type="checkbox" name="check">
+                                                            <label for="check-c">Feature</label>
+                                                        </div>
+                                                        <div class="form-group col-sm-3 col-6">
+                                                            <input id="check-d" type="checkbox" name="check">
+                                                            <label for="check-d">Feature</label>
+                                                        </div>
+                                                        <div class="form-group col-sm-3 col-6">
+                                                            <input id="check-e" type="checkbox" name="check">
+                                                            <label for="check-e">Feature</label>
+                                                        </div>
+                                                        <div class="form-group col-sm-3 col-6">
+                                                            <input id="check-f" type="checkbox" name="check">
+                                                            <label for="check-f">Feature</label>
+                                                        </div>
+                                                        <div class="form-group col-sm-3 col-6">
+                                                            <input id="check-g" type="checkbox" name="check">
+                                                            <label for="check-g">Feature</label>
+                                                        </div>
+                                                        <div class="form-group col-sm-3 col-6">
+                                                            <input id="check-h" type="checkbox" name="check">
+                                                            <label for="check-h">Feature</label>
+                                                        </div>
+                                                        <div class="form-group col-sm-3 col-6">
+                                                            <input id="check-i" type="checkbox" name="check">
+                                                            <label for="check-i">Feature</label>
+                                                        </div>
+                                                        <div class="form-group col-sm-3 col-6">
+                                                            <input id="check-j" type="checkbox" name="check">
+                                                            <label for="check-j">Feature</label>
+                                                        </div>
+                                                        <div class="form-group col-sm-3 col-6">
+                                                            <input id="check-k" type="checkbox" name="check">
+                                                            <label for="check-k">Feature</label>
+                                                        </div>
+                                                        <div class="form-group col-sm-3 col-6">
+                                                            <input id="check-l" type="checkbox" name="check">
+                                                            <label for="check-l">Feature</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-12 mb-5">
+                                            <div class="dash-heading">External Features</div>
+                                            <div class="filter-checkbox">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="form-group col-sm-3 col-6">
+                                                            <input id="check-a1" type="checkbox" name="check">
+                                                            <label for="check-a1">Feature</label>
+                                                        </div>
+                                                        <div class="form-group col-sm-3 col-6">
+                                                            <input id="check-b1" type="checkbox" name="check">
+                                                            <label for="check-b1">Feature</label>
+                                                        </div>
+                                                        <div class="form-group col-sm-3 col-6">
+                                                            <input id="check-c1" type="checkbox" name="check">
+                                                            <label for="check-c1">Feature</label>
+                                                        </div>
+                                                        <div class="form-group col-sm-3 col-6">
+                                                            <input id="check-d1" type="checkbox" name="check">
+                                                            <label for="check-d1">Feature</label>
+                                                        </div>
+                                                        <div class="form-group col-sm-3 col-6">
+                                                            <input id="check-e1" type="checkbox" name="check">
+                                                            <label for="check-e1">Feature</label>
+                                                        </div>
+                                                        <div class="form-group col-sm-3 col-6">
+                                                            <input id="check-f1" type="checkbox" name="check">
+                                                            <label for="check-f1">Feature</label>
+                                                        </div>
+                                                        <div class="form-group col-sm-3 col-6">
+                                                            <input id="check-g1" type="checkbox" name="check">
+                                                            <label for="check-g1">Feature</label>
+                                                        </div>
+                                                        <div class="form-group col-sm-3 col-6">
+                                                            <input id="check-h1" type="checkbox" name="check">
+                                                            <label for="check-h1">Feature</label>
+                                                        </div>
+                                                        <div class="form-group col-sm-3 col-6">
+                                                            <input id="check-i1" type="checkbox" name="check">
+                                                            <label for="check-i1">Feature</label>
+                                                        </div>
+                                                        <div class="form-group col-sm-3 col-6">
+                                                            <input id="check-j1" type="checkbox" name="check">
+                                                            <label for="check-j1">Feature</label>
+                                                        </div>
+                                                        <div class="form-group col-sm-3 col-6">
+                                                            <input id="check-k1" type="checkbox" name="check">
+                                                            <label for="check-k1">Feature</label>
+                                                        </div>
+                                                        <div class="form-group col-sm-3 col-6">
+                                                            <input id="check-l1" type="checkbox" name="check">
+                                                            <label for="check-l1">Feature</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-12 mb-5">
+                                            <div class="dash-heading">Internal Features</div>
+                                            <div class="filter-checkbox">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="form-group col-sm-3 col-6">
+                                                            <input id="check-a2" type="checkbox" name="check">
+                                                            <label for="check-a2">Feature</label>
+                                                        </div>
+                                                        <div class="form-group col-sm-3 col-6">
+                                                            <input id="check-b2" type="checkbox" name="check">
+                                                            <label for="check-b2">Feature</label>
+                                                        </div>
+                                                        <div class="form-group col-sm-3 col-6">
+                                                            <input id="check-c2" type="checkbox" name="check">
+                                                            <label for="check-c2">Feature</label>
+                                                        </div>
+                                                        <div class="form-group col-sm-3 col-6">
+                                                            <input id="check-d2" type="checkbox" name="check">
+                                                            <label for="check-d2">Feature</label>
+                                                        </div>
+                                                        <div class="form-group col-sm-3 col-6">
+                                                            <input id="check-e2" type="checkbox" name="check">
+                                                            <label for="check-e2">Feature</label>
+                                                        </div>
+                                                        <div class="form-group col-sm-3 col-6">
+                                                            <input id="check-f2" type="checkbox" name="check">
+                                                            <label for="check-f2">Feature</label>
+                                                        </div>
+                                                        <div class="form-group col-sm-3 col-6">
+                                                            <input id="check-g2" type="checkbox" name="check">
+                                                            <label for="check-g2">Feature</label>
+                                                        </div>
+                                                        <div class="form-group col-sm-3 col-6">
+                                                            <input id="check-h2" type="checkbox" name="check">
+                                                            <label for="check-h2">Feature</label>
+                                                        </div>
+                                                        <div class="form-group col-sm-3 col-6">
+                                                            <input id="check-i2" type="checkbox" name="check">
+                                                            <label for="check-i2">Feature</label>
+                                                        </div>
+                                                        <div class="form-group col-sm-3 col-6">
+                                                            <input id="check-j2" type="checkbox" name="check">
+                                                            <label for="check-j2">Feature</label>
+                                                        </div>
+                                                        <div class="form-group col-sm-3 col-6">
+                                                            <input id="check-k2" type="checkbox" name="check">
+                                                            <label for="check-k2">Feature</label>
+                                                        </div>
+                                                        <div class="form-group col-sm-3 col-6">
+                                                            <input id="check-l2" type="checkbox" name="check">
+                                                            <label for="check-l2">Feature</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-12 mb-5">
+                                            <div class="dash-heading">Places Features</div>
+                                            <div class="filter-checkbox">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="form-group col-sm-3 col-6">
+                                                            <input id="check-a3" type="checkbox" name="check">
+                                                            <label for="check-a3">Feature</label>
+                                                        </div>
+                                                        <div class="form-group col-sm-3 col-6">
+                                                            <input id="check-b3" type="checkbox" name="check">
+                                                            <label for="check-b3">Feature</label>
+                                                        </div>
+                                                        <div class="form-group col-sm-3 col-6">
+                                                            <input id="check-c3" type="checkbox" name="check">
+                                                            <label for="check-c3">Feature</label>
+                                                        </div>
+                                                        <div class="form-group col-sm-3 col-6">
+                                                            <input id="check-d3" type="checkbox" name="check">
+                                                            <label for="check-d3">Feature</label>
+                                                        </div>
+                                                        <div class="form-group col-sm-3 col-6">
+                                                            <input id="check-e3" type="checkbox" name="check">
+                                                            <label for="check-e3">Feature</label>
+                                                        </div>
+                                                        <div class="form-group col-sm-3 col-6">
+                                                            <input id="check-f3" type="checkbox" name="check">
+                                                            <label for="check-f3">Feature</label>
+                                                        </div>
+                                                        <div class="form-group col-sm-3 col-6">
+                                                            <input id="check-g3" type="checkbox" name="check">
+                                                            <label for="check-g3">Feature</label>
+                                                        </div>
+                                                        <div class="form-group col-sm-3 col-6">
+                                                            <input id="check-h3" type="checkbox" name="check">
+                                                            <label for="check-h3">Feature</label>
+                                                        </div>
+                                                        <div class="form-group col-sm-3 col-6">
+                                                            <input id="check-i3" type="checkbox" name="check">
+                                                            <label for="check-i3">Feature</label>
+                                                        </div>
+                                                        <div class="form-group col-sm-3 col-6">
+                                                            <input id="check-j3" type="checkbox" name="check">
+                                                            <label for="check-j3">Feature</label>
+                                                        </div>
+                                                        <div class="form-group col-sm-3 col-6">
+                                                            <input id="check-k3" type="checkbox" name="check">
+                                                            <label for="check-k3">Feature</label>
+                                                        </div>
+                                                        <div class="form-group col-sm-3 col-6">
+                                                            <input id="check-l3" type="checkbox" name="check">
+                                                            <label for="check-l3">Feature</label>
+                                                        </div>
+
+                                                        <div class="col-md-12 prop-btns">
+                                                            <a class="btn v8 next-btn">
+                                                                Next<i class="fas fa-arrow-right"></i>
+                                                            </a>
+
+                                                            <a class="btn v8 prev-btn">
+                                                                <i class="fas fa-arrow-left"></i>back
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="tab-pane fade" id="translation">
+                                    <div class="row mb-30">
+                                        <div class="col-md-12">
+                                            <ul class="nav nav-tabs list-details-tab lang-tabs mb-20" id="lionTab" role="tablist">
+                                                <li class="nav-item active">
+                                                    <a class="active" data-toggle="tab" href="#first-lang-tab">French</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a data-toggle="tab" href="#second-lang-tab">English</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="col-md-12">
+                                            <div class="tab-content mar-top-30 mar-bot-20" id="lionTabContent">
+                                                <div class="tab-pane fade active show" id="first-lang-tab">
+                                                    <div class="container">
+                                                        <div class="row">
+                                                            <div class="col-12">
+                                                                <div class="form-group">
+                                                                    <label>Name</label>
+                                                                    <input type="text" class="form-control filter-input" placeholder="Name">
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label for="list_info">Description</label>
+                                                                    <textarea class="form-control" id="list_info1" rows="1" placeholder="Description"></textarea>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-12 prop-btns">
+                                                                <a class="btn v8 next-btn">
+                                                                    Save<i class="fas fa-save"></i>
+                                                                </a>
+
+                                                                <a class="btn v8 prev-btn">
+                                                                    <i class="fas fa-arrow-left"></i>back
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="tab-pane fade" id="second-lang-tab">
+                                                    <div class="container">
+                                                        <div class="row">
+                                                            <div class="col-12">
+                                                                <div class="form-group">
+                                                                    <label>Name</label>
+                                                                    <input type="text" class="form-control filter-input" placeholder="Name">
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label for="list_info">Description</label>
+                                                                    <textarea class="form-control" id="list_info2" rows="1" placeholder="Description"></textarea>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-12 prop-btns">
+                                                                <a class="btn v8 save-btn">
+                                                                    Save<i class="fas fa-save"></i>
+                                                                </a>
+
+                                                                <a class="btn v8 prev-btn">
+                                                                    <i class="fas fa-arrow-left"></i>back
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Add Listing ends-->
+
+
+        <!-- Scroll to top starts-->
+        <span class="scrolltotop"><i class="lnr lnr-arrow-up"></i></span>
+        <!-- Scroll to top ends-->
+    </div>
+    <!--Page Wrapper ends-->
+
+
+    <!--Footer Starts-->
+    <div class="footer-wrapper v1">
+        <div class="footer-top-area">
+            <div class="container">
+                <div class="row nav-folderized">
+                    <div class="col-lg-3 col-md-6 col-sm-12 fot-block">
+                        <div class="footer-content">
+                            <a class="footer-brand" href="index.html">
+                                <img src="images/white-logo.png" alt="logo" class="img-fluid fluid-second">
+                            </a>
+                            <div class="company-desc">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio excepturi nam totam sequi, ipsam consequatur repudiandae libero illum.</p>
+                                <br>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            </div>
+                            <div class="links">
+                                <a href="#"><img src="images/apple-icn.svg"/></a>
+                                <a href="#"><img src="images/google-icn.svg"/></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 fot-block">
+                        <div class="footer-content nav">
+                            <h2 class="title">Popular Cities</h2>
+                            <ul class="list res-list">
+                                <li><a class="link-hov style2" href="#">Istanbul</a></li>
+                                <li><a class="link-hov style2" href="#">Trabzon</a></li>
+                                <li><a class="link-hov style2" href="#">Antalya</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 fot-block">
+                        <div class="footer-content">
+                            <h4 class="title">Contact</h4>
+                            <ul class="list footer-list mt-20">
+                                <li>
+                                    <div class="contact-info fot-locat">
+                                        <div class="text">Başak Mahallesi, Hürriyet Bulvari Caddesi, Yiğitler Sokak, Artan İş Merkezi, B Blok – 2. Kat – Daire : 23 34480 Başakşehir / İstanbul</div>
+                                    </div>
+                                </li>
+                                <li class="mail-li-item">
+                                    <div class="contact-info fot-mail">
+                                        <i class="fas fa-envelope-open"></i><div class="text"><a href="#">info@adam-gr.com</a></div>
+                                    </div>
+                                </li>
+                                <li class="phone-li-item">
+                                    <div class="contact-info fot-tel">
+                                        <i class="fas fa-phone-square-alt"></i><div class="text">+90 552 222 2265</div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="footer-social-wrap">
+                                <ul class="social-buttons style2">
+                                    <li><a href="https://wa.me/905522222265"><i class="fab fa-whatsapp"></i></a></li>
+                                    <li><a href="https://twitter.com/Adam4It"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="https://www.youtube.com/channel/UCfSzzEmPr9PtyGW2RtuEYJw"><i class="fab fa-youtube"></i></a></li>
+                                    <li><a href="https://www.facebook.com/Adam4IT/"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="https://www.instagram.com/adam4it/"><i class="fab fa-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 fot-block">
+                        <div class="footer-content nav">
+                            <h2 class="title">Pages</h2>
+                            <ul class="list res-list">
+                                <li><a class="link-hov style2" href="">Pages</a></li>
+                                <li><a class="link-hov style2" href="">Properties</a></li>
+                                <li><a class="link-hov style2" href="">News</a></li>
+                                <li><a class="link-hov style2" href="">About</a></li>
+                                <li><a class="link-hov style2" href="">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom-area">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-8 offset-md-2">
+                        <p class="copy-right">Copyright © 2018 <a href="https://www.adam-gr.com/" class="priv-cop">Adam Ict</a> Trademarks are the property of their respective owners.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Footer ends-->
+
+
+    <!--login Modal starts-->
+    <div class="modal fade" id="user-login-popup">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="lnr lnr-cross"></i></span></button>
+                </div>
+                <div class="modal-body">
+                    <!--User Login section starts-->
+                    <div class="user-login-section">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h4 class="login-heading">Login</h4>
+                                    <p class="login-p">Login to your account</p>
+                                    <form id="login-form" action="#" method="post">
+                                        <div class="form-group">
+                                            <label for="email">Email</label>
+                                            <input type="email" name="email" id="email" tabindex="1" class="form-control" placeholder="Email" value="">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="user_password">Password</label>
+                                            <input type="password" name="user_password" id="user_password" tabindex="2" class="form-control" placeholder="Password">
+                                        </div>
+
+                                        <p class="forget-pas"><a href="forget-password.html">Forget Password?</a></p>
+
+                                        <div class="res-box text-center mt-30">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <button type="button" class="btn v8 col-6 reg-btn" onclick="window.location.href= 'accounts-rtl.html' ">Register</button>
+                                                    <button type="submit" class="btn v8 col-6 log-btn">Login</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--User login section ends-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--login Modal ends-->
+
+
+    <!-- start fixed-icons -->
+    <div class="fixed-social">
+        <ul class="fixed-social-buttons">
+            <li><a href="https://www.instagram.com/adam4it/"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://www.youtube.com/channel/UCfSzzEmPr9PtyGW2RtuEYJw"><i class="fab fa-youtube"></i></a></li>
+            <li><a href="https://www.facebook.com/Adam4IT/"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="https://twitter.com/Adam4It"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://wa.me/905522222265"><i class="fab fa-whatsapp"></i></a></li>
+        </ul>
+    </div>
+    <!-- end fixed-icons -->
+
+
+    <!--Scripts starts-->
+    <!--plugin js-->
+    <script src="js/plugin.js"></script>
+    <script src="demo/js/demo.js"></script>
+    <!--google maps-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_8C7p0Ws2gUu7wo0b6pK9Qu7LuzX2iWY&amp;libraries=places&amp;callback=initAutocomplete"></script>
+    <!-- Select 2 -->
+    <script src="js/select2.full.min.js"></script>
+    <script src="js/custom/using-select2.js"></script>
+    <!-- Custom Js -->
+    <script src="js/custom/login-drop.js"></script>
+    <script src="js/custom/using-select2.js"></script>
+    <!--Main js-->
+    <script src="js/main.js"></script>
+    <!--Scripts ends-->
+</body>
+
+</html>

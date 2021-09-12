@@ -1,0 +1,32 @@
+/*start table*/
+/*start of table menu*/
+.map-filter input[type="text"] {
+    padding: 4px 45px 0 15px;
+}
+
+.input-search:before {
+    left: auto;
+    right: 15px;
+}
+/*end of table menu*/
+
+/*start of table menu*/
+.table-menu-container .table-menu .td-content {
+    left: 75px;
+}
+
+.table-menu-container .table-menu .fa-times {
+    right: 10px;
+}
+/*end of table menu*/
+/*end edit table*/
+
+
+
+/*start media queries***********/
+@media screen and (max-width: 767px) {
+    .table-menu-container .table-menu .td-content {
+        left: 50px;
+    }
+}
+/*end media queries***********/

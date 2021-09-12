@@ -1,0 +1,1117 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+<head>
+    <!-- Metas -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="LionCoders" />
+    <!-- Links -->
+    <link rel="icon" type="image/png" href="images/icons/fave_icon.ico" />
+    <!-- google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+    <!-- Plugins CSS -->
+    <link href="css/plugin.css" rel="stylesheet" />
+    <!-- style CSS -->
+    <link href="css/style.css" rel="stylesheet" />
+    <!--Demo CSS-->
+    <link href="demo/css/demo.css" rel="stylesheet" />
+    <!-- Document Title -->
+    <title>Adam Real-Estate | Home</title>
+    <!-- Font style -->
+    <link href="https://fonts.googleapis.com/css?family=Mukta&display=swap" rel="stylesheet">
+    <!-- Select 2 -->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.0.12/dist/css/select2.min.css" rel="stylesheet" />
+    <!-- Custom Styles -->
+    <link href="css/custom-styles/global/global.css" rel="stylesheet" />
+    <link href="css/custom-styles/global/global-ltr.css" rel="stylesheet" />
+    <link href="css/custom-styles/header/header-global.css" rel="stylesheet" />
+    <link href="css/custom-styles/header/header-ltr.css" rel="stylesheet" />
+    <link href="css/custom-styles/footer/footer-global.css" rel="stylesheet" />
+    <link href="css/custom-styles/footer/footer-ltr.css" rel="stylesheet" />
+    <link href="css/custom-styles/news/news-global.css" rel="stylesheet" />
+    <link href="css/custom-styles/news/news-ltr.css" rel="stylesheet" />
+    <link href="css/custom-styles/home/home-global.css" rel="stylesheet" />
+    <link href="css/custom-styles/home/home-ltr.css" rel="stylesheet" />
+</head>
+
+<body>
+<!--Preloader starts-->
+<div class="preloader js-preloader">
+    <img src="images/preloader.gif" alt="...">
+</div>
+<!--Preloader ends-->
+
+
+<!--Page Wrapper starts-->
+<div class="page-wrapper">
+    <!--header starts-->
+    <header class="header transparent scroll-hide">
+        <!--Header Top Section Starts-->
+        <div class="header-top-section">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-sm-4 col-12 header-dropdowns">
+                        <div class="container">
+                            <div class="row">
+                                <div class="select-lang nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown09" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">English</a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdown09">
+                                        <a class="dropdown-item" href="index-rtl.html">Arabic</a>
+                                        <a class="dropdown-item" href="#">Turkish</a>
+                                    </div>
+                                </div>
+
+                                <div class="select-curr">
+                                    <select class="js-example-basic-single select2-header" name="state">
+                                        <option value="AL">TRY</option>
+                                        <option value="WY">USD</option>
+                                        <option value="WY">Euro</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-8 col-12 contact-links">
+                        <div class="header-top-center">
+                            <ul>
+                                <li><i class="fa fa-phone"></i> <a href="https://wa.me/905522222265">+90 552 222 2265</a></li>
+                                <li><i class="fas fa-envelope-open-text"></i><a href="https://info@adam-gr.com">info@adam-gr.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-12 login-dropdown">
+                        <div class="menu-btn">
+                            <div class="add-list">
+                                <a id="login_btn_id" class="login-btn"><i class="fas fa-user-circle"></i>Login<i class="fas fa-chevron-down arr-down-icon"></i></a>
+                                <ul class="dropdown login-drop">
+                                    <li><a href="accounts.html">Profile</a></li>
+                                    <li><a href="add-property.html">Add Property</a></li>
+                                    <li><a href="properties.html">Properties</a></li>
+                                    <li><a href="#" data-toggle="modal" data-target="#user-login-popup">Logout</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Header Top Section Ends-->
+
+        <!--Main Menu starts-->
+        <div class="site-navbar-wrap v2">
+            <div class="container">
+                <div class="site-navbar">
+                    <div class="row align-items-center">
+                        <div class="col-lg-2 col-sm-4 col-6">
+                            <a class="navbar-brand" href="index.html">
+                                <img src="images/white-logo.png" alt="logo" class="img-fluid fluid-second">
+                            </a>
+                        </div>
+                        <div class="col-lg-8 col-sm-8 col-6 order-2 order-lg-1 pl-xs-0">
+                            <nav class="site-navigation text-center">
+                                <div class="container">
+                                    <ul class="site-menu js-clone-nav d-none d-lg-block">
+                                        <li class="has-children">
+                                            <a class="active" href="index.html">Home</a>
+                                        </li>
+                                        <li class="has-children">
+                                            <a href="properties.html">Properties</a>
+                                        </li>
+                                        <li class="has-children">
+                                            <a href="news.html">News</a>
+                                        </li>
+                                        <li class="has-children">
+                                            <a href="about.html">About</a>
+                                        </li>
+                                        <li class="has-children">
+                                            <a href="contact.html">Contact</a>
+                                        </li>
+                                        <li class="login-drop-container">
+                                            <a id="menu_login_btn_id" class="login-btn">
+                                                <img src="images/agents/agent_1.jpg" class="login-img"/>
+                                                Tarek Alsabony
+                                                <i class="fas fa-chevron-down arr-down-icon"></i>
+                                            </a>
+                                            <ul class="dropdown login-drop hide-drop">
+                                                <li><a href="accounts.html">Profile</a></li>
+                                                <li><a href="add-property.html">Add Property</a></li>
+                                                <li><a href="properties.html">Properties</a></li>
+                                                <li><a href="#" data-toggle="modal" data-target="#user-login-popup">Logout</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <div class="add-prop-btn-box">
+                                                <a class="btn v1" href="add-property.html"><i class="lnr lnr-home"></i>Add Property</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <ul class="menu-social-buttons">
+                                                <li><a href="https://www.instagram.com/adam4it/"><i class="fab fa-instagram"></i></a></li>
+                                                <li><a href="https://www.youtube.com/channel/UCfSzzEmPr9PtyGW2RtuEYJw"><i class="fab fa-youtube"></i></a></li>
+                                                <li><a href="https://www.facebook.com/Adam4IT/"><i class="fab fa-facebook-f"></i></a></li>
+                                                <li><a href="https://twitter.com/Adam4It"><i class="fab fa-twitter"></i></a></li>
+                                                <li><a href="https://wa.me/905522222265"><i class="fab fa-whatsapp"></i></a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+
+                            <div class="d-lg-none sm-right menu-icn">
+                                <a href="#" class="mobile-bar js-menu-toggle">
+                                    <span class="lnr lnr-menu"></span>
+                                </a>
+                            </div>
+                            <!--mobile-menu starts -->
+                            <div class="site-mobile-menu">
+                                <div class="site-mobile-menu-header">
+                                    <div class="site-mobile-menu-close  js-menu-toggle">
+                                        <span class="lnr lnr-cross"></span> </div>
+                                </div>
+
+                                <div class="header-dropdowns">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="select-lang nav-item dropdown col-6">
+                                                <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown10" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">English</a>
+                                                <div class="dropdown-menu" aria-labelledby="dropdown09">
+                                                    <a class="dropdown-item" href="index-rtl.html">Arabic</a>
+                                                    <a class="dropdown-item" href="#">Turkish</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="select-curr col-6">
+                                                <select class="js-example-basic-single select2-header" name="state">
+                                                    <option value="AL">TRY</option>
+                                                    <option value="WY">USD</option>
+                                                    <option value="WY">Euro</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="site-mobile-menu-body"></div>
+
+                                <div class="header-bottom-contact">
+                                    <ul>
+                                        <li><i class="fas fa-envelope-open-text"></i><a href="https://info@adam-gr.com">info@adam-gr.com</a></li>
+                                        <li><i class="fa fa-phone"></i> <a href="https://wa.me/905522222265">+90 552 222 2265</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--mobile-menu ends-->
+                        </div>
+                        <div class="col-lg-2 col-4 order-1 order-lg-2 text-right pr-xs-0 add-prop-btn">
+                            <div class="menu-btn">
+                                <div class="add-list">
+                                    <a class="btn v1" href="add-property.html"><i class="lnr lnr-home"></i>Add Property</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Main Menu ends-->
+    </header>
+    <!--Header ends-->
+
+
+    <!--Hero section starts-->
+    <div class="hero v1 section-padding">
+        <div class="overlay op-1"></div>
+        <!--Listing filter starts-->
+        <div class="container">
+            <div class="row">
+                <!-- start contact -->
+                <div class="col-xl-4 col-lg-5 offset-lg-7 col-md-12 contact-section-container">
+                    <div class="hero-slider-info contact-section hide-contact">
+                        <form class="hero__form v3 filter listing-filter">
+                            <h4>Find your dream home</h4>
+                            <div class="row">
+                                <div class="col-xl-12 col-sm-6 col-12 mb-4">
+                                    <select class="js-example-basic-single jSelectBox" name="state">
+                                        <option>Property Status</option>
+                                        <option>Any</option>
+                                        <option>For Rent</option>
+                                        <option>For Sale</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-xl-6 col-sm-6 col-12 mb-4">
+                                    <select class="js-example-basic-single jSelectBox" name="state">
+                                        <option>Country</option>
+                                        <option>Any</option>
+                                        <option>Any</option>
+                                        <option>Any</option>
+                                    </select>
+                                </div>
+                                <div class="col-xl-6 col-sm-6 col-12 mb-4">
+                                    <select class="js-example-basic-single jSelectBox" name="state">
+                                        <option>City</option>
+                                        <option>Any</option>
+                                        <option>Any</option>
+                                        <option>Any</option>
+                                    </select>
+                                </div>
+                                <div class="col-xl-6 col-sm-6 col-12 mb-4">
+                                    <select class="js-example-basic-single jSelectBox" name="state">
+                                        <option>Property Type</option>
+                                        <option>Any</option>
+                                        <option>Any</option>
+                                        <option>Any</option>
+                                    </select>
+                                </div>
+                                <div class="col-xl-6 col-sm-6 col-12 mb-4">
+                                    <select class="js-example-basic-single jSelectBox" name="state">
+                                        <option>Room Num</option>
+                                        <option>Any</option>
+                                        <option>For Rent</option>
+                                        <option>For Sale</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-6 col-6 mb-3 num-input">
+                                    <input type="number" placeholder="Min Area" class="hero__form-input">
+                                </div>
+
+                                <div class="col-sm-6 col-6 mb-3 num-input">
+                                    <input type="number" placeholder="Max Area" class="hero__form-input">
+                                </div>
+                                <div class="col-sm-6 col-6 mb-3 num-input">
+                                    <input type="number" placeholder="Min Price" class="hero__form-input">
+                                </div>
+
+                                <div class="col-sm-6 col-6 mb-3 num-input">
+                                    <input type="number" placeholder="Max Price" class="hero__form-input">
+                                </div>
+                                <div class="col-xl-12 col-sm-6 col-12 mb-3">
+                                    <select class="js-example-basic-single jSelectBox" name="state">
+                                        <option>Try</option>
+                                        <option>Any</option>
+                                        <option>Any</option>
+                                        <option>Any</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="search_btn">
+                                        <a href="#">Search Property</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- end contact-->
+            </div>
+        </div>
+        <!--Listing filter ends-->
+    </div>
+    <!--Hero section ends-->
+
+
+    <!--property-sec starts-->
+    <div class="trending-places property-sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title v2">
+                        <h2 class="wow fadeInDown" data-wow-delay="0.1s">Special Project In Turkey</h2>
+                        <img src="images/header-decoration.png" alt="header-decoration" class="header-deco">
+                    </div>
+                </div>
+                <div class="swiper-container trending-place-wrap">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="single-property-box">
+                                <div class="property-item">
+                                    <a class="property-img" href="property-details.html"><img src="images/property/property_8.jpg" alt="#"> </a>
+                                    <ul class="feature_text">
+                                        <li class="feature_or"><span>For Sale</span></li>
+                                    </ul>
+                                </div>
+                                <div class="property-title-box">
+                                    <h4><a href="property-details.html">Comfortable Family Apartment</a></h4>
+                                    <div class="property-location">
+                                        <i class="fa fa-map-marker-alt"></i>
+                                        <p>4210 Khale Street, Florence, USA</p>
+                                    </div>
+                                    <div class="trend-left">
+                                        <p>
+                                            <span class="prop-price">Starts From /</span>
+                                            <span class="price-dir">2,050,000 ₺</span>
+                                        </p>
+                                    </div>
+                                    <div class="container">
+                                        <ul class="property-feature row">
+                                            <li class="col-4"><img src="images/ico-bad.png">
+                                                <span>4 Baths</span>
+                                            </li>
+                                            <li class="col-4"><img src="images/ic-bath.png">
+                                                <span>1500 sq ft</span>
+                                            </li>
+                                            <li class="col-4"><img src="images/ico-area.png">
+                                                <span>2 Beds</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="view-prop-btn">
+                                        <a class="btn v1" href="property-details.html">View Property</a>
+                                    </div>
+                                    <div class="trending-bottom">
+                                        <a href="#" class="property-author">
+                                            <img src="images/agents/agent_min_1.jpg" alt="...">
+                                            <span>Tony Stark</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide wow fadeInUp" data-wow-delay="0.2s">
+                            <div class="single-property-box">
+                                <div class="property-item">
+                                    <a class="property-img" href="property-details.html"><img src="images/property/property_8.jpg" alt="#"> </a>
+                                    <ul class="feature_text">
+                                        <li class="feature_or"><span>For Sale</span></li>
+                                    </ul>
+                                </div>
+                                <div class="property-title-box">
+                                    <h4><a href="property-details.html">Comfortable Family Apartment</a></h4>
+                                    <div class="property-location">
+                                        <i class="fa fa-map-marker-alt"></i>
+                                        <p>4210 Khale Street, Florence, USA</p>
+                                    </div>
+                                    <div class="trend-left">
+                                        <p>
+                                            <span class="prop-price">Starts From /</span>
+                                            <span class="price-dir">2,050,000 ₺</span>
+                                        </p>
+                                    </div>
+                                    <div class="container">
+                                        <ul class="property-feature row">
+                                            <li class="col-4"><img src="images/ico-bad.png">
+                                                <span>4 Baths</span>
+                                            </li>
+                                            <li class="col-4"><img src="images/ic-bath.png">
+                                                <span>1500 sq ft</span>
+                                            </li>
+                                            <li class="col-4"><img src="images/ico-area.png">
+                                                <span>2 Beds</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="view-prop-btn">
+                                        <a class="btn v1" href="property-details.html">View Property</a>
+                                    </div>
+                                    <div class="trending-bottom">
+                                        <a href="#" class="property-author">
+                                            <img src="images/agents/agent_min_1.jpg" alt="...">
+                                            <span>Tony Stark</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="single-property-box">
+                                <div class="property-item">
+                                    <a class="property-img" href="property-details.html"><img src="images/property/property_8.jpg" alt="#"> </a>
+                                    <ul class="feature_text">
+                                        <li class="feature_or"><span>For Sale</span></li>
+                                    </ul>
+                                </div>
+                                <div class="property-title-box">
+                                    <h4><a href="property-details.html">Comfortable Family Apartment</a></h4>
+                                    <div class="property-location">
+                                        <i class="fa fa-map-marker-alt"></i>
+                                        <p>4210 Khale Street, Florence, USA</p>
+                                    </div>
+                                    <div class="trend-left">
+                                        <p>
+                                            <span class="prop-price">Starts From /</span>
+                                            <span class="price-dir">2,050,000 ₺</span>
+                                        </p>
+                                    </div>
+                                    <div class="container">
+                                        <ul class="property-feature row">
+                                            <li class="col-4"><img src="images/ico-bad.png">
+                                                <span>4 Baths</span>
+                                            </li>
+                                            <li class="col-4"><img src="images/ic-bath.png">
+                                                <span>1500 sq ft</span>
+                                            </li>
+                                            <li class="col-4"><img src="images/ico-area.png">
+                                                <span>2 Beds</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="view-prop-btn">
+                                        <a class="btn v1" href="property-details.html">View Property</a>
+                                    </div>
+                                    <div class="trending-bottom">
+                                        <a href="#" class="property-author">
+                                            <img src="images/agents/agent_min_1.jpg" alt="...">
+                                            <span>Tony Stark</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="single-property-box">
+                                <div class="property-item">
+                                    <a class="property-img" href="property-details.html"><img src="images/property/property_8.jpg" alt="#"> </a>
+                                    <ul class="feature_text">
+                                        <li class="feature_or"><span>For Sale</span></li>
+                                    </ul>
+                                </div>
+                                <div class="property-title-box">
+                                    <h4><a href="property-details.html">Comfortable Family Apartment</a></h4>
+                                    <div class="property-location">
+                                        <i class="fa fa-map-marker-alt"></i>
+                                        <p>4210 Khale Street, Florence, USA</p>
+                                    </div>
+                                    <div class="trend-left">
+                                        <p>
+                                            <span class="prop-price">Starts From /</span>
+                                            <span class="price-dir">2,050,000 ₺</span>
+                                        </p>
+                                    </div>
+                                    <div class="container">
+                                        <ul class="property-feature row">
+                                            <li class="col-4"><img src="images/ico-bad.png">
+                                                <span>4 Baths</span>
+                                            </li>
+                                            <li class="col-4"><img src="images/ic-bath.png">
+                                                <span>1500 sq ft</span>
+                                            </li>
+                                            <li class="col-4"><img src="images/ico-area.png">
+                                                <span>2 Beds</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="view-prop-btn">
+                                        <a class="btn v1" href="property-details.html">View Property</a>
+                                    </div>
+                                    <div class="trending-bottom">
+                                        <a href="#" class="property-author">
+                                            <img src="images/agents/agent_min_1.jpg" alt="...">
+                                            <span>Tony Stark</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="single-property-box">
+                                <div class="property-item">
+                                    <a class="property-img" href="property-details.html"><img src="images/property/property_8.jpg" alt="#"> </a>
+                                    <ul class="feature_text">
+                                        <li class="feature_or"><span>For Sale</span></li>
+                                    </ul>
+                                </div>
+                                <div class="property-title-box">
+                                    <h4><a href="property-details.html">Comfortable Family Apartment</a></h4>
+                                    <div class="property-location">
+                                        <i class="fa fa-map-marker-alt"></i>
+                                        <p>4210 Khale Street, Florence, USA</p>
+                                    </div>
+                                    <div class="trend-left">
+                                        <p>
+                                            <span class="prop-price">Starts From /</span>
+                                            <span class="price-dir">2,050,000 ₺</span>
+                                        </p>
+                                    </div>
+                                    <div class="container">
+                                        <ul class="property-feature row">
+                                            <li class="col-4"><img src="images/ico-bad.png">
+                                                <span>4 Baths</span>
+                                            </li>
+                                            <li class="col-4"><img src="images/ic-bath.png">
+                                                <span>1500 sq ft</span>
+                                            </li>
+                                            <li class="col-4"><img src="images/ico-area.png">
+                                                <span>2 Beds</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="view-prop-btn">
+                                        <a class="btn v1" href="property-details.html">View Property</a>
+                                    </div>
+                                    <div class="trending-bottom">
+                                        <a href="#" class="property-author">
+                                            <img src="images/agents/agent_min_1.jpg" alt="...">
+                                            <span>Tony Stark</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="single-property-box">
+                                <div class="property-item">
+                                    <a class="property-img" href="property-details.html"><img src="images/property/property_8.jpg" alt="#"> </a>
+                                    <ul class="feature_text">
+                                        <li class="feature_or"><span>For Sale</span></li>
+                                    </ul>
+                                </div>
+                                <div class="property-title-box">
+                                    <h4><a href="property-details.html">Comfortable Family Apartment</a></h4>
+                                    <div class="property-location">
+                                        <i class="fa fa-map-marker-alt"></i>
+                                        <p>4210 Khale Street, Florence, USA</p>
+                                    </div>
+                                    <div class="trend-left">
+                                        <p>
+                                            <span class="prop-price">Starts From /</span>
+                                            <span class="price-dir">2,050,000 ₺</span>
+                                        </p>
+                                    </div>
+                                    <div class="container">
+                                        <ul class="property-feature row">
+                                            <li class="col-4"><img src="images/ico-bad.png">
+                                                <span>4 Baths</span>
+                                            </li>
+                                            <li class="col-4"><img src="images/ic-bath.png">
+                                                <span>1500 sq ft</span>
+                                            </li>
+                                            <li class="col-4"><img src="images/ico-area.png">
+                                                <span>2 Beds</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="view-prop-btn">
+                                        <a class="btn v1" href="property-details.html">View Property</a>
+                                    </div>
+                                    <div class="trending-bottom">
+                                        <a href="#" class="property-author">
+                                            <img src="images/agents/agent_min_1.jpg" alt="...">
+                                            <span>Tony Stark</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="single-property-box">
+                                <div class="property-item">
+                                    <a class="property-img" href="property-details.html"><img src="images/property/property_8.jpg" alt="#"> </a>
+                                    <ul class="feature_text">
+                                        <li class="feature_or"><span>For Sale</span></li>
+                                    </ul>
+                                </div>
+                                <div class="property-title-box">
+                                    <h4><a href="property-details.html">Comfortable Family Apartment</a></h4>
+                                    <div class="property-location">
+                                        <i class="fa fa-map-marker-alt"></i>
+                                        <p>4210 Khale Street, Florence, USA</p>
+                                    </div>
+                                    <div class="trend-left">
+                                        <p>
+                                            <span class="prop-price">Starts From /</span>
+                                            <span class="price-dir">2,050,000 ₺</span>
+                                        </p>
+                                    </div>
+                                    <div class="container">
+                                        <ul class="property-feature row">
+                                            <li class="col-4"><img src="images/ico-bad.png">
+                                                <span>4 Baths</span>
+                                            </li>
+                                            <li class="col-4"><img src="images/ic-bath.png">
+                                                <span>1500 sq ft</span>
+                                            </li>
+                                            <li class="col-4"><img src="images/ico-area.png">
+                                                <span>2 Beds</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="view-prop-btn">
+                                        <a class="btn v1" href="property-details.html">View Property</a>
+                                    </div>
+                                    <div class="trending-bottom">
+                                        <a href="#" class="property-author">
+                                            <img src="images/agents/agent_min_1.jpg" alt="...">
+                                            <span>Tony Stark</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="trending-pagination"></div>
+            </div>
+        </div>
+    </div>
+    <!--property-sec ends-->
+
+
+    <!--about company starts-->
+    <div class="value-calculator-section py-20 v1 about-sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 content-block">
+                    <div class="value-content-wrap">
+                        <div class="section-title v2 wow fadeInDown" data-wow-delay="0.1s">
+                            <h2>Real Estate Company</h2>
+                            <img src="images/header-decoration.png" alt="header-decoration" class="header-deco">
+                        </div>
+                        <div class="value-content wow fadeInDown" data-wow-delay="0.2s">
+                            <p>The first step in selling your property is to get a valuation from local experts. They will inspect your home and take into account its unique features, the area and market conditions before providing you with the most accurate valuation.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="img-box col-sm-12 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="value-img bg-h" style="background-image: url(images/property/property_val.jpg)"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--about company ends-->
+
+
+    <!--Popular City starts-->
+    <div class="popular-cities">
+        <div class="container mt-35">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title v1 wow fadeInDown" data-wow-delay="0.1s">
+                        <h2>Find Properties in Your city</h2>
+                        <img src="images/header-decoration.png" alt="header-decoration" class="header-deco">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="property-place pb-30">
+            <div class="popular-place-wrap v2">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-sm-12 mb-30 pop-element wow fadeInUp" data-wow-delay="0.1s">
+                            <a href="properties.html">
+                                <div class="single-place-wrap">
+                                    <div class="single-place-image">
+                                        <img src="images/places/place_13.jpg" alt="place-image">
+                                    </div>
+                                    <div class="single-place-content">
+                                        <h2>Trabzon</h2>
+                                        <h3>30 Properties</h3>
+                                        <p>See all Listings <i class="lnr lnr-arrow-right"></i></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 mb-30 pop-element wow fadeInUp" data-wow-delay="0.2s">
+                            <a href="grid-fullwidth-map.html">
+                                <div class="single-place-wrap">
+                                    <div class="single-place-image">
+                                        <img src="images/places/place_17.jpg" alt="place-image">
+                                    </div>
+                                    <div class="single-place-content">
+                                        <h2>Antalya</h2>
+                                        <h3>135 Properties</h3>
+                                        <p>See all Listings <i class="lnr lnr-arrow-right"></i></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 mb-30 pop-element wow fadeInUp" data-wow-delay="0.3s">
+                            <a href="grid-fullwidth-map.html">
+                                <div class="single-place-wrap">
+                                    <div class="single-place-image">
+                                        <img src="images/places/place_15.jpg" alt="place-image">
+                                    </div>
+                                    <div class="single-place-content">
+                                        <h2>Istanbul</h2>
+                                        <h3>120 Properties</h3>
+                                        <p>See all Listings <i class="lnr lnr-arrow-right"></i></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Popular City ends-->
+
+
+    <!--Partner section starts-->
+    <div class="partner-section style1 pb-20">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title v1 wow fadeInDown" data-wow-delay="0.1s">
+                        <h2 class="wow fadeInDown">Our Partners</h2>
+                        <img src="images/header-decoration.png" alt="header-decoration" class="header-deco">
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="swiper-container partner-wrap">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide single-partner">
+                                <img src="images/partners/partner_1.jpg" alt="...">
+                            </div>
+                            <div class="swiper-slide single-partner">
+                                <img src="images/partners/partner_2.jpg" alt="...">
+                            </div>
+                            <div class="swiper-slide single-partner">
+                                <img src="images/partners/partner_3.jpg" alt="...">
+                            </div>
+                            <div class="swiper-slide single-partner">
+                                <img src="images/partners/partner_2.jpg" alt="...">
+                            </div>
+                            <div class="swiper-slide single-partner">
+                                <img src="images/partners/partner_1.jpg" alt="...">
+                            </div>
+                            <div class="swiper-slide single-partner">
+                                <img src="images/partners/partner_3.jpg" alt="...">
+                            </div>
+                            <div class="swiper-slide single-partner">
+                                <img src="images/partners/partner_2.jpg" alt="...">
+                            </div>
+                        </div>
+
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Partner section ends-->
+
+
+    <!--Property Price section starts-->
+    <div class="category-section bg-xs bg-fixed mt-50" style="background-image: url(images/bg/category-bg-3.jpg)">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 offset-sm-6">
+                    <div class="category-content text-center">
+                        <h3 class="wow fadeInUp" data-wow-delay="0.1s">Looking to Buy a new property or Sell an existing one? </h3>
+                        <a href="#" class="btn v3 wow fadeInLeft" data-wow-delay="0.2s">Rent Properties</a>
+                        <a href="#" class="btn v6 wow fadeInRight" data-wow-delay="0.3s">Buy Properties</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Property Price section ends-->
+
+
+    <!--Blog section starts-->
+    <div class="blog-posts v1 mt-40 pb-20 recent-sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title v1 wow fadeInDown" data-wow-delay="0.1s">
+                        <h2>The latest Real Estate News</h2>
+                        <img src="images/header-decoration.png" alt="header-decoration" class="header-deco">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="card single-blog-item v1">
+                        <p class="blog-card-head"><i class="fas fa-newspaper"></i><span>Inspiring Design</span></p>
+                        <img src="images/blog/news_2.jpg" alt="...">
+                        <div class="card-body">
+                            <p><i class="fas fa-calendar-alt cal-icn"></i><span class="date">Sep 28th , 2018</span> </p>
+                            <h4 class="card-title"><a href="news-details.html">The most inspiring interior design for your home</a></h4>
+                            <div class="blog-card-btn">
+                                <a class="btn v1" href="news-details.html">View News</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="card single-blog-item v1">
+                        <p class="blog-card-head"><i class="fas fa-newspaper"></i><span>Inspiring Design</span></p>
+                        <img src="images/blog/news_2.jpg" alt="...">
+                        <div class="card-body">
+                            <p><i class="fas fa-calendar-alt cal-icn"></i><span class="date">Sep 28th , 2018</span> </p>
+                            <h4 class="card-title"><a href="news-details.html">The most inspiring interior design for your home</a></h4>
+                            <div class="blog-card-btn">
+                                <a class="btn v1" href="news-details.html">View News</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="card single-blog-item v1">
+                        <p class="blog-card-head"><i class="fas fa-newspaper"></i><span>Inspiring Design</span></p>
+                        <img src="images/blog/news_2.jpg" alt="...">
+                        <div class="card-body">
+                            <p><i class="fas fa-calendar-alt cal-icn"></i><span class="date">Sep 28th , 2018</span> </p>
+                            <h4 class="card-title"><a href="news-details.html">The most inspiring interior design for your home</a></h4>
+                            <div class="blog-card-btn">
+                                <a class="btn v1" href="news-details.html">View News</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-12 text-center mt-1 browse-news-btn">
+                    <a href="news.html" class="btn v9">See More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Blog section ends-->
+
+
+    <!--videos section starts-->
+    <div class="blog-posts v1 mt-40 pb-20 videos-sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title v1 wow fadeInDown" data-wow-delay="0.1s">
+                        <h2>Videos</h2>
+                        <img src="images/header-decoration.png" alt="header-decoration" class="header-deco">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="card single-blog-item v1">
+                        <img src="images/property/property_5.jpg" />
+                        <!--<div class="embed-responsive embed-responsive-16by9">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/m3dqdPObw-E" allowfullscreen></iframe>
+                        </div>-->
+                        <div class="card-body">
+                            <p class="card-title"><a href="single-news-one.html">Online portal for real estate consultancy and how to obtain Turkish citizenship</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="card single-blog-item v1">
+                        <img src="images/property/property_5.jpg" />
+                        <!--<div class="embed-responsive embed-responsive-16by9">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/m3dqdPObw-E" allowfullscreen></iframe>
+                        </div>-->
+                        <div class="card-body">
+                            <p class="card-title"><a href="single-news-one.html">Online portal for real estate consultancy and how to obtain Turkish citizenship</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="card single-blog-item v1">
+                        <img src="images/property/property_5.jpg" />
+                        <!--<div class="embed-responsive embed-responsive-16by9">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/m3dqdPObw-E" allowfullscreen></iframe>
+                        </div>-->
+                        <div class="card-body">
+                            <p class="card-title"><a href="single-news-one.html">Online portal for real estate consultancy and how to obtain Turkish citizenship</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--videos section ends-->
+
+
+    <!--download section ends-->
+    <div class="download-section">
+        <div class="row">
+            <div class="container">
+                <div class="row">
+                    <div class="down-content col-sm-6">
+                        <h4 class="wow fadeInLeft">Download Our App</h4>
+                        <div class="links wow fadeInRight">
+                            <a href="#"><img src="images/apple-icn.svg"/></a>
+                            <a href="#"><img src="images/google-icn.svg"/></a>
+                        </div>
+                    </div>
+                    <div class="download-img-box col-sm-6">
+                        <img src="images/download-img.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--download section ends-->
+
+
+    <!-- Scroll to top starts-->
+    <span class="scrolltotop"><i class="lnr lnr-arrow-up"></i></span>
+    <!-- Scroll to top ends-->
+</div>
+<!--Page Wrapper ends-->
+
+
+<!--Footer Starts-->
+<div class="footer-wrapper v1">
+    <div class="footer-top-area">
+        <div class="container">
+            <div class="row nav-folderized">
+                <div class="col-lg-3 col-md-6 col-sm-12 fot-block">
+                    <div class="footer-content">
+                        <h2 class="title">About Us</h2>
+                        <span class="big-line"><span class="sm-line"></span></span>
+                        <div class="company-desc">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio excepturi nam totam sequi, ipsam consequatur repudiandae libero illum.</p>
+                            <br>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 fot-block">
+                    <div class="footer-content nav">
+                        <h2 class="title">Popular Cities</h2>
+                        <span class="big-line"><span class="sm-line"></span></span>
+                        <ul class="list res-list">
+                            <li><a class="link-hov style2" href="#">Istanbul</a></li>
+                            <li><a class="link-hov style2" href="#">Trabzon</a></li>
+                            <li><a class="link-hov style2" href="#">Antalya</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 fot-block">
+                    <div class="footer-content">
+                        <h4 class="title">Contact</h4>
+                        <span class="big-line"><span class="sm-line"></span></span>
+                        <ul class="list footer-list mt-20">
+                            <li>
+                                <div class="contact-info fot-locat">
+                                    <div class="text">Başak Mahallesi, Hürriyet Bulvari Caddesi, Yiğitler Sokak, Artan İş Merkezi, B Blok – 2. Kat – Daire : 23 34480 Başakşehir / İstanbul</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="contact-info fot-mail">
+                                    <div class="text"><a href="#">info@adam-gr.com</a></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="contact-info fot-tel">
+                                    <div class="text">+90 552 222 2265</div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="footer-social-wrap">
+                            <ul class="social-buttons style2">
+                                <li><a href="https://wa.me/905522222265"><i class="fab fa-whatsapp"></i></a></li>
+                                <li><a href="https://twitter.com/Adam4It"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="https://www.youtube.com/channel/UCfSzzEmPr9PtyGW2RtuEYJw"><i class="fab fa-youtube"></i></a></li>
+                                <li><a href="https://www.facebook.com/Adam4IT/"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="https://www.instagram.com/adam4it/"><i class="fab fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 fot-block">
+                    <div class="footer-content nav">
+                        <h2 class="title">Pages</h2>
+                        <span class="big-line"><span class="sm-line"></span></span>
+                        <ul class="list res-list">
+                            <li><a class="link-hov style2" href="">Pages</a></li>
+                            <li><a class="link-hov style2" href="">Properties</a></li>
+                            <li><a class="link-hov style2" href="">News</a></li>
+                            <li><a class="link-hov style2" href="">About</a></li>
+                            <li><a class="link-hov style2" href="">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom-area">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-8 offset-md-2">
+                    <p class="copy-right">Copyright © 2018 <a href="https://www.adam-gr.com/" class="priv-cop">Adam Ict</a> Trademarks are the property of their respective owners.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Footer ends-->
+
+
+<!--login Modal starts-->
+<div class="modal fade" id="user-login-popup">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="lnr lnr-cross"></i></span></button>
+            </div>
+            <div class="modal-body">
+                <!--User Login section starts-->
+                <div class="user-login-section">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4 class="login-heading">Login</h4>
+                                <p class="login-p">Login to your account</p>
+                                <form id="login-form" action="#" method="post">
+                                    <div class="form-group">
+                                        <label for="email">Email</label>
+                                        <input type="email" name="email" id="email" tabindex="1" class="form-control" placeholder="Email" value="">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="user_password">Password</label>
+                                        <input type="password" name="user_password" id="user_password" tabindex="2" class="form-control" placeholder="Password">
+                                    </div>
+
+                                    <p class="forget-pas"><a href="forget-password.html">Forget Password?</a></p>
+
+                                    <div class="res-box text-center mt-30">
+                                        <div class="container">
+                                            <div class="row">
+                                                <button type="button" class="btn v8 col-6 reg-btn" onclick="window.location.href= 'accounts-rtl.html' ">Register</button>
+                                                <button type="submit" class="btn v8 col-6 log-btn">Login</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--User login section ends-->
+            </div>
+        </div>
+    </div>
+</div>
+<!--login Modal ends-->
+
+
+<!-- start fixed-icons -->
+<div class="fixed-social">
+    <ul class="fixed-social-buttons">
+        <li><a href="https://www.instagram.com/adam4it/"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="https://www.youtube.com/channel/UCfSzzEmPr9PtyGW2RtuEYJw"><i class="fab fa-youtube"></i></a></li>
+        <li><a href="https://www.facebook.com/Adam4IT/"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="https://twitter.com/Adam4It"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="https://wa.me/905522222265"><i class="fab fa-whatsapp"></i></a></li>
+    </ul>
+</div>
+<!-- end fixed-icons -->
+
+
+<!--Scripts starts-->
+<!--plugin js-->
+<script src="js/plugin.js"></script>
+<script src="demo/js/demo.js"></script>
+<!-- Select 2 -->
+<script src="js/select2.full.min.js"></script>
+<script src="js/custom/using-select2.js"></script>
+<!-- Custom Js -->
+<script src="js/custom/using-select2.js"></script>
+<script src="js/custom/login-drop.js"></script>
+<!--Main js-->
+<script src="js/main.js"></script>
+<!--Scripts ends-->
+</body>
+
+</html>

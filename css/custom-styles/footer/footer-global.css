@@ -1,0 +1,128 @@
+/*start footer*/
+.footer-wrapper.v1:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1B4C8E;
+    z-index: 0;
+    opacity: .8;
+}
+
+.footer-wrapper.v1 {
+    background-image: url("../../../images/bg/footer_back.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 0;
+    border-top: none !important;
+    background-color: #3C3C3C;
+}
+
+.footer-top-area {
+    padding: 40px 0 0;
+    margin-top: -2px;
+}
+
+.footer-top-area .container {
+    position: relative;
+    padding-bottom: 0;
+}
+
+.footer-top-area .footer-content .footer-brand img {
+    margin-bottom: 20px;
+}
+
+.footer-top-area .footer-content .title {
+    margin-top: 0;
+}
+
+.footer-top-area .fot-block {
+    margin-bottom: 20px;
+}
+
+.footer-top-area .footer-content .links {
+    margin-top: 20px;
+}
+
+.footer-top-area .nav-folderized ul.res-list {
+    overflow: visible;
+}
+
+.footer-top-area .nav-folderized .nav h2:after {
+    display: none;
+}
+
+.footer-wrapper.v1 .footer-top-area .footer-content .title,
+.footer-wrapper.v1 .company-desc p,
+.footer-wrapper.v1 .footer-content ul li a.link-hov.style2,
+.footer-wrapper.v1 .social-buttons.style2 li a i,
+.footer-wrapper.v1 .contact-info i,
+.footer-wrapper.v1 .contact-info .text,
+.footer-wrapper.v1 .contact-info .text a {
+    color: #fff;
+}
+
+.footer-list .mail-li-item,
+.footer-list .phone-li-item {
+    padding-bottom: 0;
+}
+
+.contact-info.fot-locat,
+.footer-list .mail-li-item .contact-info {
+    margin-bottom: 0;
+}
+
+.footer-wrapper.v1 .contact-info .text {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.footer-wrapper.v1 .social-buttons.style2 {
+    margin-top: 20px;
+}
+
+.footer-wrapper.v1 .social-buttons.style2 li a:hover i,
+.footer-wrapper.v1 .footer-content ul li a.link-hov.style2:hover {
+    color: #F26C61 !important;
+}
+
+.footer-bottom-area {
+    border-top: 1px solid #fff;
+}
+
+.footer-bottom-area .copy-right {
+    font-size: 18px;
+    color: #fff !important;
+}
+
+.footer-bottom-area .priv-cop {
+    color: #FFAD39;
+}
+/*end footer*/
+
+
+/*start of media queries*************/
+@media screen and (max-width: 1199px) and (min-width: 992px) {
+    .footer-top-area .footer-content .links a img{
+        max-width: 40%;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .footer-top-area .fot-block {
+        margin-bottom: 40px
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .footer-top-area .fot-block:not(:last-child) {
+        margin-bottom: 40px
+    }
+
+    .footer-wrapper.v1 .contact-info .text {
+        margin: 0;
+    }
+}
+/*end of media queries*************/

@@ -1,0 +1,45 @@
+/*start properties form*/
+.listing-filter input[type="text"] {
+    padding: 4px 40px 0 15px;
+}
+
+.global-filter-form .input-search:before {
+    right: 30px;
+}
+
+.hero__form.v1 .dropdown-filter span:before {
+    right: auto;
+    left: -25px;
+}
+/*end properties form*/
+
+
+
+/*start media queries*****/
+@media screen and (min-width: 1200px) {
+    .global-filter-form .input-search {
+        padding: 0 20px 0 10px;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .global-filter-form .input-search:before {
+        right: 20px;
+    }
+
+    .hero__form.v1.filter.listing-filter .dropdown-filter {
+        margin-right: 0;
+        margin-left: 25px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .hero__form.v1 .dropdown-filter span:before {
+        left: -15px;
+    }
+
+    .hero__form.v1.filter.listing-filter .dropdown-filter {
+        margin-left: 30px;
+    }
+}
+/*end media queries*****/

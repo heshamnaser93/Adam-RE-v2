@@ -1,0 +1,17 @@
+/*start news details*/
+.right-side-details i {
+    margin-left: 5px;
+}
+
+.right-side-details i.cal-icn {
+    margin-right: 40px;
+}
+
+.right-side-details .share-icn {
+    float: left;
+}
+
+.right-side-details .share-icn i {
+    right: 3px;
+}
+/*end news details*/

@@ -1,0 +1,40 @@
+/***
+====================================================================
+		Property Detail
+====================================================================
+***/
+
+.upper-info-box .property-info li i {
+    left: 0;
+}
+
+.property-detail .thumbs-carousel .owl-nav {
+    left: 0;
+}
+
+.property-detail .image-carousel .owl-prev,
+.property-detail .image-carousel .owl-next {
+    left: 20px;
+}
+
+.property-detail .image-carousel .owl-next{
+    left: auto;
+    right: 20px;
+}
+
+.property-detail .image-carousel .owl-prev span,
+.property-detail .image-carousel .owl-next span {
+    left: 10px;
+}
+
+
+
+/*start media queries****/
+@media only screen and (max-width: 575px) {
+    .property-detail .image-carousel .owl-prev span,
+    .property-detail .image-carousel .owl-next span {
+        left: 6px;
+    }
+
+}
+/*end media queries****/

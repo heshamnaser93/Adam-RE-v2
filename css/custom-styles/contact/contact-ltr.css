@@ -1,0 +1,25 @@
+/*start contact style*/
+.contact-details .social-buttons li:first-child {
+    padding-right: 10px;
+}
+
+.contact-map.v1 {
+    direction: ltr;
+    left: 0;
+    right: auto;
+}
+
+.btn.v7 i {
+    margin-right: 10px;
+}
+/*end contact style*/
+
+
+
+/*start media queries**********/
+@media screen and (min-width: 992px) {
+    .contact-form {
+        padding-left: 100px;
+    }
+}
+/*end media queries**********/

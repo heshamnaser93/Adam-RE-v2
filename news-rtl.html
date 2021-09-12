@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+
+<head>
+    <!-- Metas -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="LionCoders" />
+    <!-- Links -->
+    <link rel="icon" type="image/png" href="images/icons/fave_icon.ico" />
+    <!-- google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+    <!-- Plugins CSS -->
+    <link href="css/plugin-rtl.css" rel="stylesheet" />
+    <!-- style CSS -->
+    <link href="css/style-rtl.css" rel="stylesheet" />
+    <!-- Document Title -->
+    <title>آدم عقارات | الاخبار</title>
+    <!-- Font style -->
+    <link href="https://fonts.googleapis.com/css?family=Tajawal&display=swap" rel="stylesheet">
+    <!-- Select 2 -->
+    <link href="css/select2.min.css" rel="stylesheet" />
+    <!-- Custom Styles -->
+    <link href="css/custom-styles/global/global.css" rel="stylesheet" />
+    <link href="css/custom-styles/global/global-rtl.css" rel="stylesheet" />
+    <link href="css/custom-styles/header/header-global.css" rel="stylesheet" />
+    <link href="css/custom-styles/header/header-rtl.css" rel="stylesheet" />
+    <link href="css/custom-styles/footer/footer-global.css" rel="stylesheet" />
+    <link href="css/custom-styles/footer/footer-rtl.css" rel="stylesheet" />
+    <link href="css/custom-styles/news/news-global.css" rel="stylesheet" />
+    <link href="css/custom-styles/news/news-rtl.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!--Preloader starts-->
+    <div class="preloader js-preloader">
+        <img src="images/preloader.gif" alt="...">
+    </div>
+    <!--Preloader ends-->
+    <!--Page Wrapper starts-->
+    <div class="page-wrapper">
+        <!--header starts-->
+        <header class="header transparent scroll-hide">
+            <!--Header Top Section Starts-->
+            <div class="header-top-section">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-sm-4 col-12 header-dropdowns">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="select-lang nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown09" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">العربية</a>
+                                        <div class="dropdown-menu" aria-labelledby="dropdown09">
+                                            <a class="dropdown-item" href="news.html">الانجليزية</a>
+                                            <a class="dropdown-item" href="#">التركية</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="select-curr">
+                                        <select class="js-example-basic-single select2-header" name="state">
+                                            <option value="AL">ليرة تركي</option>
+                                            <option value="WY">دولار</option>
+                                            <option value="WY">يورو</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-sm-8 col-12 contact-links">
+                            <div class="header-top-center">
+                                <ul>
+                                    <li><i class="fa fa-phone"></i> <a href="https://wa.me/905522222265">+90 552 222 2265</a></li>
+                                    <li><i class="fas fa-envelope-open-text"></i><a href="https://info@adam-gr.com">info@adam-gr.com</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4 col-12 login-dropdown">
+                            <div class="menu-btn">
+                                <div class="add-list">
+                                    <a id="login_btn_id" class="login-btn"><i class="fas fa-user-circle"></i>دخول<i class="fas fa-chevron-down arr-down-icon"></i></a>
+                                    <ul class="dropdown login-drop">
+                                        <li><a href="accounts.html">الملف الشخصي</a></li>
+                                        <li><a href="add-property.html">اضف عقار</a></li>
+                                        <li><a href="properties.html">العقارات</a></li>
+                                        <li><a href="#" data-toggle="modal" data-target="#user-login-popup">تسجيل خروج</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Header Top Section Ends-->
+
+            <!--Main Menu starts-->
+            <div class="site-navbar-wrap v2">
+                <div class="container">
+                    <div class="site-navbar">
+                        <div class="row align-items-center">
+                            <div class="col-lg-2 col-sm-4 col-6">
+                                <a class="navbar-brand" href="index-rtl.html">
+                                    <img src="images/white-logo.png" alt="logo" class="img-fluid fluid-second">
+                                </a>
+                            </div>
+                            <div class="col-lg-8 col-sm-8 col-6 order-2 order-lg-1 pl-xs-0">
+                                <nav class="site-navigation text-center">
+                                    <div class="container">
+                                        <ul class="site-menu js-clone-nav d-none d-lg-block">
+                                            <li class="has-children">
+                                                <a href="index.html">الرئيسية</a>
+                                            </li>
+                                            <li class="has-children">
+                                                <a href="properties.html">العقارات</a>
+                                            </li>
+                                            <li class="has-children">
+                                                <a class="active" href="news.html">الاخبار</a>
+                                            </li>
+                                            <li class="has-children">
+                                                <a href="about.html">من نحن</a>
+                                            </li>
+                                            <li class="has-children">
+                                                <a href="contact.html">تواصل معنا</a>
+                                            </li>
+                                            <li class="login-drop-container">
+                                                <a id="menu_login_btn_id" class="login-btn">
+                                                    <img src="images/agents/agent_1.jpg" class="login-img"/>
+                                                    طارق الصابوني
+                                                    <i class="fas fa-chevron-down arr-down-icon"></i>
+                                                </a>
+                                                <ul class="dropdown login-drop hide-drop">
+                                                    <li><a href="accounts.html">الملف الشخصي</a></li>
+                                                    <li><a href="add-property.html">اضف عقار</a></li>
+                                                    <li><a href="properties.html">العقارات</a></li>
+                                                    <li><a href="#" data-toggle="modal" data-target="#user-login-popup">تسجيل خروج</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <div class="add-prop-btn-box">
+                                                    <a class="btn v1" href="add-property.html"><i class="lnr lnr-home"></i>اضف عقار</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <ul class="menu-social-buttons">
+                                                    <li><a href="https://www.instagram.com/adam4it/"><i class="fab fa-instagram"></i></a></li>
+                                                    <li><a href="https://www.youtube.com/channel/UCfSzzEmPr9PtyGW2RtuEYJw"><i class="fab fa-youtube"></i></a></li>
+                                                    <li><a href="https://www.facebook.com/Adam4IT/"><i class="fab fa-facebook-f"></i></a></li>
+                                                    <li><a href="https://twitter.com/Adam4It"><i class="fab fa-twitter"></i></a></li>
+                                                    <li><a href="https://wa.me/905522222265"><i class="fab fa-whatsapp"></i></a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </nav>
+
+                                <div class="d-lg-none sm-right menu-icn">
+                                    <a href="#" class="mobile-bar js-menu-toggle">
+                                        <span class="lnr lnr-menu"></span>
+                                    </a>
+                                </div>
+                                <!--mobile-menu starts -->
+                                <div class="site-mobile-menu">
+                                    <div class="site-mobile-menu-header">
+                                        <div class="site-mobile-menu-close  js-menu-toggle">
+                                            <span class="lnr lnr-cross"></span> </div>
+                                    </div>
+
+                                    <div class="header-dropdowns">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="select-lang nav-item dropdown col-6">
+                                                    <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown10" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">العربية</a>
+                                                    <div class="dropdown-menu" aria-labelledby="dropdown09">
+                                                        <a class="dropdown-item" href="news.html">الانجليزية</a>
+                                                        <a class="dropdown-item" href="#">التركية</a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="select-curr col-6">
+                                                    <select class="js-example-basic-single select2-header" name="state">
+                                                        <option value="AL">ليرة تركي</option>
+                                                        <option value="WY">دولار</option>
+                                                        <option value="WY">يورو</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="site-mobile-menu-body"></div>
+
+                                    <div class="header-bottom-contact">
+                                        <ul>
+                                            <li><i class="fas fa-envelope-open-text"></i><a href="https://info@adam-gr.com">info@adam-gr.com</a></li>
+                                            <li><i class="fa fa-phone"></i> <a href="https://wa.me/905522222265">+90 552 222 2265</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!--mobile-menu ends-->
+                            </div>
+                            <div class="col-lg-2 col-4 order-1 order-lg-2 text-right pr-xs-0 add-prop-btn">
+                                <div class="menu-btn">
+                                    <div class="add-list">
+                                        <a class="btn v1" href="add-property.html"><i class="lnr lnr-home"></i>اضف عقار</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Main Menu ends-->
+        </header>
+        <!--Header ends-->
+
+
+        <!--Breadcrumb section starts-->
+        <div class="breadcrumb-section bg-h" style="background-image: url(images/breadcrumb/breadcrumb_1.jpg)">
+            <div class="overlay op-5"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 offset-md-2 text-center">
+                        <div class="breadcrumb-menu">
+                            <h2>الاخبار</h2>
+                            <span><a href="index.html">الرئيسية</a></span>
+                            <span>الاخبار</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Breadcrumb section ends-->
+
+
+        <!--Listing Filter starts-->
+        <div class="filter-wrapper style1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="sidebar-content-right py-20">
+                        <div class="item-wrapper pt-20 recent-sec">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
+                                    <div class="card single-blog-item v1">
+                                        <p class="blog-card-head"><i class="fas fa-newspaper"></i><span>تصميم ملهم</span></p>
+                                        <img src="images/blog/news_2.jpg" alt="...">
+                                        <div class="card-body">
+                                            <p><i class="fas fa-calendar-alt cal-icn"></i><span class="date">28 سبتمبر 2020</span> </p>
+                                            <h4 class="card-title"><a href="news-details-rtl.html">التصميم الداخلي الأكثر إلهاما لمنزلك</a></h4>
+                                            <div class="blog-card-btn">
+                                                <a class="btn v1" href="news-details.html">عرض الخبر</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
+                                    <div class="card single-blog-item v1">
+                                        <p class="blog-card-head"><i class="fas fa-newspaper"></i><span>تصميم ملهم</span></p>
+                                        <img src="images/blog/news_2.jpg" alt="...">
+                                        <div class="card-body">
+                                            <p><i class="fas fa-calendar-alt cal-icn"></i><span class="date">28 سبتمبر 2020</span> </p>
+                                            <h4 class="card-title"><a href="news-details-rtl.html">التصميم الداخلي الأكثر إلهاما لمنزلك</a></h4>
+                                            <div class="blog-card-btn">
+                                                <a class="btn v1" href="news-details.html">عرض الخبر</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
+                                    <div class="card single-blog-item v1">
+                                        <p class="blog-card-head"><i class="fas fa-newspaper"></i><span>تصميم ملهم</span></p>
+                                        <img src="images/blog/news_2.jpg" alt="...">
+                                        <div class="card-body">
+                                            <p><i class="fas fa-calendar-alt cal-icn"></i><span class="date">28 سبتمبر 2020</span> </p>
+                                            <h4 class="card-title"><a href="news-details-rtl.html">التصميم الداخلي الأكثر إلهاما لمنزلك</a></h4>
+                                            <div class="blog-card-btn">
+                                                <a class="btn v1" href="news-details.html">عرض الخبر</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
+                                    <div class="card single-blog-item v1">
+                                        <p class="blog-card-head"><i class="fas fa-newspaper"></i><span>تصميم ملهم</span></p>
+                                        <img src="images/blog/news_2.jpg" alt="...">
+                                        <div class="card-body">
+                                            <p><i class="fas fa-calendar-alt cal-icn"></i><span class="date">28 سبتمبر 2020</span> </p>
+                                            <h4 class="card-title"><a href="news-details-rtl.html">التصميم الداخلي الأكثر إلهاما لمنزلك</a></h4>
+                                            <div class="blog-card-btn">
+                                                <a class="btn v1" href="news-details.html">عرض الخبر</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
+                                    <div class="card single-blog-item v1">
+                                        <p class="blog-card-head"><i class="fas fa-newspaper"></i><span>تصميم ملهم</span></p>
+                                        <img src="images/blog/news_2.jpg" alt="...">
+                                        <div class="card-body">
+                                            <p><i class="fas fa-calendar-alt cal-icn"></i><span class="date">28 سبتمبر 2020</span> </p>
+                                            <h4 class="card-title"><a href="news-details-rtl.html">التصميم الداخلي الأكثر إلهاما لمنزلك</a></h4>
+                                            <div class="blog-card-btn">
+                                                <a class="btn v1" href="news-details.html">عرض الخبر</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
+                                    <div class="card single-blog-item v1">
+                                        <p class="blog-card-head"><i class="fas fa-newspaper"></i><span>تصميم ملهم</span></p>
+                                        <img src="images/blog/news_2.jpg" alt="...">
+                                        <div class="card-body">
+                                            <p><i class="fas fa-calendar-alt cal-icn"></i><span class="date">28 سبتمبر 2020</span> </p>
+                                            <h4 class="card-title"><a href="news-details-rtl.html">التصميم الداخلي الأكثر إلهاما لمنزلك</a></h4>
+                                            <div class="blog-card-btn">
+                                                <a class="btn v1" href="news-details.html">عرض الخبر</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
+                                    <div class="card single-blog-item v1">
+                                        <p class="blog-card-head"><i class="fas fa-newspaper"></i><span>تصميم ملهم</span></p>
+                                        <img src="images/blog/news_2.jpg" alt="...">
+                                        <div class="card-body">
+                                            <p><i class="fas fa-calendar-alt cal-icn"></i><span class="date">28 سبتمبر 2020</span> </p>
+                                            <h4 class="card-title"><a href="news-details-rtl.html">التصميم الداخلي الأكثر إلهاما لمنزلك</a></h4>
+                                            <div class="blog-card-btn">
+                                                <a class="btn v1" href="news-details.html">عرض الخبر</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
+                                    <div class="card single-blog-item v1">
+                                        <p class="blog-card-head"><i class="fas fa-newspaper"></i><span>تصميم ملهم</span></p>
+                                        <img src="images/blog/news_2.jpg" alt="...">
+                                        <div class="card-body">
+                                            <p><i class="fas fa-calendar-alt cal-icn"></i><span class="date">28 سبتمبر 2020</span> </p>
+                                            <h4 class="card-title"><a href="news-details-rtl.html">التصميم الداخلي الأكثر إلهاما لمنزلك</a></h4>
+                                            <div class="blog-card-btn">
+                                                <a class="btn v1" href="news-details.html">عرض الخبر</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
+                                    <div class="card single-blog-item v1">
+                                        <p class="blog-card-head"><i class="fas fa-newspaper"></i><span>تصميم ملهم</span></p>
+                                        <img src="images/blog/news_2.jpg" alt="...">
+                                        <div class="card-body">
+                                            <p><i class="fas fa-calendar-alt cal-icn"></i><span class="date">28 سبتمبر 2020</span> </p>
+                                            <h4 class="card-title"><a href="news-details-rtl.html">التصميم الداخلي الأكثر إلهاما لمنزلك</a></h4>
+                                            <div class="blog-card-btn">
+                                                <a class="btn v1" href="news-details.html">عرض الخبر</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--pagination starts-->
+                                <div class="post-nav nav-res pt-20">
+                                    <div class="row">
+                                        <div class="col-md-8 offset-md-2  col-xs-12 ">
+                                            <div class="page-num text-center">
+                                                <ul>
+                                                    <li class="active"><a href="#">1</a></li>
+                                                    <li><a href="#">2</a></li>
+                                                    <li><a href="#">3</a></li>
+                                                    <li><a href="#">4</a></li>
+                                                    <li><a href="#"><i class="lnr lnr-chevron-left"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--pagination ends-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Listing Filter ends-->
+
+
+        <!-- Scroll to top starts-->
+        <span class="scrolltotop"><i class="lnr lnr-arrow-up"></i></span>
+        <!-- Scroll to top ends-->
+    </div>
+    <!--Page Wrapper ends-->
+    </div>
+
+
+    <!--Footer Starts-->
+    <div class="footer-wrapper v1">
+        <div class="footer-top-area">
+            <div class="container">
+                <div class="row nav-folderized">
+                    <div class="col-lg-3 col-md-6 col-sm-12 fot-block">
+                        <div class="footer-content">
+                            <a class="footer-brand" href="index-rtl.html">
+                                <img src="images/white-logo.png" alt="logo" class="img-fluid fluid-second">
+                            </a>
+                            <div class="company-desc">
+                                <p>لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليتصور طريقه وضع النصوص بالتصاميم سواء كانت تصاميم مطبوعه.</p>
+                                <br>
+                                <p>لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل.</p>
+                            </div>
+                            <div class="links">
+                                <a href="#"><img src="images/apple-icn.svg"/></a>
+                                <a href="#"><img src="images/google-icn.svg"/></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 fot-block">
+                        <div class="footer-content nav">
+                            <h2 class="title">اشهر المدن</h2>
+                            <ul class="list res-list">
+                                <li><a class="link-hov style2" href="#">اسطنبول</a></li>
+                                <li><a class="link-hov style2" href="#">طرابزون</a></li>
+                                <li><a class="link-hov style2" href="#">انطاليا</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 fot-block">
+                        <div class="footer-content">
+                            <h4 class="title">تواصل معنا</h4>
+                            <ul class="list footer-list mt-20">
+                                <li>
+                                    <div class="contact-info fot-locat">
+                                        <div class="text">Başak Mahallesi, Hürriyet Bulvari Caddesi, Yiğitler Sokak, Artan İş Merkezi, B Blok – 2. Kat – Daire : 23 34480 Başakşehir / İstanbul</div>
+                                    </div>
+                                </li>
+                                <li class="mail-li-item">
+                                    <div class="contact-info fot-mail">
+                                        <i class="fas fa-envelope-open"></i><div class="text"><a href="#">info@adam-gr.com</a></div>
+                                    </div>
+                                </li>
+                                <li class="phone-li-item">
+                                    <div class="contact-info fot-tel">
+                                        <i class="fas fa-phone-square-alt"></i><div class="text">+90 552 222 2265</div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="footer-social-wrap">
+                                <ul class="social-buttons style2">
+                                    <li><a href="https://wa.me/905522222265"><i class="fab fa-whatsapp"></i></a></li>
+                                    <li><a href="https://twitter.com/Adam4It"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="https://www.youtube.com/channel/UCfSzzEmPr9PtyGW2RtuEYJw"><i class="fab fa-youtube"></i></a></li>
+                                    <li><a href="https://www.facebook.com/Adam4IT/"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="https://www.instagram.com/adam4it/"><i class="fab fa-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 fot-block">
+                        <div class="footer-content nav">
+                            <h2 class="title">الصفحات</h2>
+                            <ul class="list res-list">
+                                <li><a class="link-hov style2" href="">الرئيسية</a></li>
+                                <li><a class="link-hov style2" href="">الخصائص</a></li>
+                                <li><a class="link-hov style2" href="">الاخبار</a></li>
+                                <li><a class="link-hov style2" href="">من نحن</a></li>
+                                <li><a class="link-hov style2" href="">تواصل معنا</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom-area">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-8 offset-md-2">
+                        <p class="copy-right">© 2020 <a href="https://www.adam-gr.com/" class="priv-cop">شركة آدم </a>جميع الحقوق محفوظة</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Footer ends-->
+
+
+    <!--login Modal starts-->
+    <div class="modal fade" id="user-login-popup">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="lnr lnr-cross"></i></span></button>
+                </div>
+                <div class="modal-body">
+                    <!--User Login section starts-->
+                    <div class="user-login-section">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h4 class="login-heading">تسجيل الدخول</h4>
+                                    <p class="login-p">قم بتسجيل الدخول لحسابك</p>
+                                    <form id="login-form" action="#" method="post">
+                                        <div class="form-group">
+                                            <label for="email">البريد الالكتروني</label>
+                                            <input type="email" name="email" id="email" tabindex="1" class="form-control" placeholder="البريد الالكتروني" value="">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="user_password">كلمة السر</label>
+                                            <input type="password" name="user_password" id="user_password" tabindex="2" class="form-control" placeholder="كلمة السر">
+                                        </div>
+
+                                        <p class="forget-pas"><a href="forget-password.html">نسيت كلمة السر؟</a></p>
+
+                                        <div class="res-box text-center mt-30">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <button type="button" class="btn v8 col-6 reg-btn" onclick="window.location.href= 'accounts-rtl.html' ">تسجيل</button>
+                                                    <button type="submit" class="btn v8 col-6 log-btn">دخول</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--User login section ends-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--login Modal ends-->
+
+
+    <!-- start fixed-icons -->
+    <div class="fixed-social">
+        <ul class="fixed-social-buttons">
+            <li><a href="https://www.instagram.com/adam4it/"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://www.youtube.com/channel/UCfSzzEmPr9PtyGW2RtuEYJw"><i class="fab fa-youtube"></i></a></li>
+            <li><a href="https://www.facebook.com/Adam4IT/"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="https://twitter.com/Adam4It"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://wa.me/905522222265"><i class="fab fa-whatsapp"></i></a></li>
+        </ul>
+    </div>
+    <!-- end fixed-icons -->
+
+
+    <!--Scripts starts-->
+    <!--plugin js-->
+    <script src="js/plugin.js"></script>
+    <script src="demo/js/demo.js"></script>
+    <!--google maps-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_8C7p0Ws2gUu7wo0b6pK9Qu7LuzX2iWY&amp;libraries=places&amp;callback=initAutocomplete"></script>
+    <!-- Select 2 -->
+    <script src="js/select2.full.min.js"></script>
+    <script src="js/custom/using-select2.js"></script>
+    <!-- Custom Js -->
+    <script src="js/custom/login-drop.js"></script>
+    <script src="js/custom/using-select2.js"></script>
+    <!--Main js-->
+    <script src="js/main.js"></script>
+    <!--Scripts ends-->
+</body>
+
+</html>

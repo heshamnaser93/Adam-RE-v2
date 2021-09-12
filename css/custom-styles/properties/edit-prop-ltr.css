@@ -1,0 +1,20 @@
+/*start table*/
+/*start of table menu*/
+.table-menu-container .table-menu .td-content {
+    right: 75px;
+}
+
+.table-menu-container .table-menu .fa-times {
+    left: 10px;
+}
+/*end of table menu*/
+/*end edit table*/
+
+
+/*start media queries***********/
+@media screen and (max-width: 767px) {
+    .table-menu-container .table-menu .td-content {
+        right: 50px;
+    }
+}
+/*end media queries***********/

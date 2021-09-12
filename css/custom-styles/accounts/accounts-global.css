@@ -1,0 +1,241 @@
+/*start account styles*/
+body {
+    background-color: #F6F7F9;
+}
+
+.content-back {
+    background-color: #fff;
+    padding: 10px 25px;
+}
+
+#forget-password .content-back {
+    padding: 40px 25px;
+}
+
+#register-accounts,
+#forget-password {
+    padding: 100px 0;
+}
+
+.small-head,
+.page-head {
+    text-align: center;
+    margin: auto;
+}
+
+.small-head a {
+    color: #888;
+}
+
+.small-head span {
+    margin: 0 10px;
+}
+
+.small-head a:hover {
+    color: #FFAD39;
+}
+
+.page-head {
+    margin-bottom: 20px;
+}
+
+.user-login-section .nav-tabs .nav-link {
+    text-transform: none;
+}
+
+.user-login-section .nav-tabs .nav-link.active {
+    color: #FFAD39;
+}
+
+.user-login-section .nav-tabs .nav-link.active:before {
+    content: "";
+    position: absolute;
+    top: 45px;
+    width: 100px;
+    height: 1px;
+    background-color: #FFAD39;
+}
+
+.form-container {
+    margin: auto;
+}
+
+.form-control {
+    background-color: #EFF3F6;
+    border: 1px solid #DCDCDC;
+}
+
+.res-box .btn {
+    margin-bottom: 20px !important;
+}
+
+#forget-password .res-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.form-group .add-btn {
+    margin-top: 20px;
+}
+
+.add-btn .btn.v3 {
+    background: #FFAD39;
+    margin-bottom: 10px;
+}
+
+.btn.v8 {
+    width: auto;
+    margin: 0 10px;
+    padding: 5px 10px;
+}
+
+.sign-up-btn,
+.save-btn {
+    background-color: #FFAD39 !important;
+}
+
+.add-btn .btn.v3:hover,
+.sign-up-btn:hover,
+.save-btn:hover {
+    background-color: #fff !important;
+    color: #FFAD39 !important;
+    border: 1px solid #FFAD39 !important;
+}
+
+.back-btn {
+    background-color: #fff !important;
+    color: #1B4C8E !important;
+    border-bottom: 1px solid #1B4C8E !important;
+}
+
+.account-details,
+.account-status
+{
+    border: 1px solid #C1C1C1;
+    border-radius: 5px;
+    width: 480px;
+}
+
+.account-details {
+    padding: 40px;
+}
+
+.account-details,
+.account-details img,
+.account-details span {
+    margin-bottom: 20px;
+}
+
+.account-details span,
+.account-details h2 {
+    color: #303030;
+}
+
+.account-status {
+    background-color: #F6F7F9;
+    border: 1px solid #C1C1C1;
+    padding: 10px 40px;
+}
+
+.account-details i,
+.account-status i {
+    color: #FFAD39;
+}
+
+.account-details p {
+    margin-bottom: 20px;
+}
+
+.account-status p {
+    display: inline-block;
+}
+
+.account-details span {
+    color: #8B8B8B;
+}
+/*end account styles*/
+
+
+/*start media queries***********/
+@media screen and (min-width: 1200px) {
+    .user-login-section {
+        padding-top: 150px !important;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .account-details{
+        width: auto;
+    }
+
+    .account-status {
+        width: 328px;
+    }
+}
+
+@media screen and (max-width: 991px) and (min-width: 576px) {
+    .user-login-section {
+        padding-top: 170px !important;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .account-details span {
+        font-size: 14px;
+    }
+
+    .account-details img {
+        width: 100px;
+    }
+    .account-details h3 {
+        font-size: 18px;
+    }
+
+    .account-status {
+        width: 314px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .user-acc,
+    .seller-acc {
+        top: -60px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #register-accounts,
+    #forget-password {
+        padding: 100px 20px 50px;
+    }
+
+    #register-accounts .container,
+    #forget-password .container {
+        border: 1px solid #C1C1C1;
+        border-radius: 4px;
+    }
+
+    .page-head {
+        font-size: 20px;
+    }
+
+    .user-acc,
+    .seller-acc {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .user-login-section {
+        padding-top: 100px !important;
+    }
+
+    .user-login-section .nav-tabs .nav-link {
+        font-size: 16px;
+    }
+}
+/*end media queries***********/

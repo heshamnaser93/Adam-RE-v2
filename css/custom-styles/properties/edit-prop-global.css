@@ -1,0 +1,132 @@
+/*start search input*/
+.map-filter input[type="text"] {
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 20px
+}
+
+.input-search:before,
+.input-search input::placeholder {
+    font-size: 16px;
+    font-weight: bold;
+    color: #3E3E3E;
+}
+/*end search input*/
+
+
+/*start table*/
+body,
+table,
+table .table-head {
+    background-color: #f7f7f7 !important;
+}
+
+table .table-head th {
+    color: #3E3E3E;
+    font-weight: bold !important;
+    font-size: 16px !important;
+}
+
+table tr .prop-num {
+    color: #FFAD39;
+}
+
+table tr .prop-view {
+    background-color: #FFAD39;
+    padding: 3px 20px;
+    border-radius: 5px;
+}
+
+table tr .prop-view:hover {
+    background-color: #f7f7f7;
+    border: 1px solid #FFAD39;
+}
+
+table tr .prop-view i {
+    position: relative;
+    top: 3px;
+    color: #fff;
+    font-size: 20px;
+}
+
+table tr .prop-view:hover i {
+    color: #FFAD39;
+}
+
+table tr .prop-menu img {
+    cursor: pointer;
+}
+
+/*start of table menu*/
+.table-menu-container {
+    position: relative;
+}
+
+.table-menu.display-show {
+    display: block;
+}
+
+.table-menu.display-hide {
+    display: none;
+}
+
+.table-menu-container .table-menu .td-content {
+    position: absolute;
+    width: 100px;
+    top: 50px;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 5px;
+    height: auto;
+    padding: 20px 0;
+    z-index: 45;
+    -webkit-box-shadow: 0 0 10px #ccc;
+    box-shadow: 0 0 10px #ccc;
+}
+
+.table-menu-container .table-menu .td-content li:hover {
+     background-color: #FFAD39;
+ }
+
+.table-menu-container .table-menu .td-content li:hover a{
+    color: #fff;
+}
+
+.table-menu-container .table-menu .fa-times {
+    position: absolute;
+    top: 5px;
+    color: #3E3E3E;
+    cursor: pointer;
+    font-size: 13px;
+}
+/*end of table menu*/
+/*end edit table*/
+
+
+
+/*start media queries***********/
+@media screen and (max-width: 1199px) {
+    table tr span {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .edit-prop-section .container {
+        max-width: 960px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .table-content table td {
+        min-width: 100px;
+        padding: 10px;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .edit-prop-section {
+        padding-top: 170px !important;
+    }
+}
+/*end media queries***********/

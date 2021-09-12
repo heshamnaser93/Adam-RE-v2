@@ -1,0 +1,123 @@
+/*start agents*/
+.agent-section {
+    margin-top: 100px;
+}
+
+.hero__form.v2 {
+    padding: 0;
+}
+
+.agent-details h3 {
+    font-weight: 600;
+    color: #FFAD39;
+}
+
+span.big-line {
+    width: 250px;
+}
+
+span.sm-line {
+    width: 100px;
+}
+
+.sidebar-content-right .img-box img {
+    width: 250px;
+    height: 250px;
+}
+
+.address-list li {
+    width: 50%;
+    display: inline-block;
+    padding: 0 10px;
+    color: #1B4C8E;
+    font-size: 14px;
+}
+
+.address-list li.itemFullWidth {
+    width: 100%;
+}
+
+.address-list li span {
+    width: auto;
+    color: #303030;
+}
+
+.agent-details a.ques {
+    display: inline-block;
+    color: #FFAD39;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 5px 10px 0;
+}
+
+.sidebar-content-right .btn.v8 {
+    display: inline-block;
+    width: 120px;
+    background-color: #fff;
+    color: #1B4C8E;
+    border: 1px solid #1B4C8E;
+    font-size: 16px;
+    padding: 5px;
+}
+.sidebar-content-right .btn.v8:hover {
+    background-color: #1B4C8E;
+    color: #fff;
+    border: 1px solid #1B4C8E;
+}
+/*end agents*/
+
+
+
+/*start media queries***********/
+@media screen and (max-width: 991px) {
+    .agent-section .container {
+        max-width: 960px;
+    }
+    .sidebar-content-right .btn.v8 {
+        width: 100px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .single-agent-details {
+        max-width: 800px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .sidebar-content-right {
+        padding-top: 70px !important;
+    }
+
+    .sidebar-container {
+        display: none;
+    }
+
+    .sidebar-content-right .img-box {
+        margin-bottom: 20px;
+    }
+
+    .btns-box {
+        padding: 10px 25px 0;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .sidebar-content-right {
+        padding-top: 0 !important;
+    }
+
+    .sidebar-content-right .img-box img {
+        width: 300px;
+        height: 300px;
+        display: block;
+        margin: auto;
+    }
+
+    .address-list li
+    {
+        width: 100%;
+    }
+}
+/*end media queries***********/

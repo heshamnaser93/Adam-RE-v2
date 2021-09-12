@@ -1,0 +1,42 @@
+/*start contact*/
+.hero__form.v3 {
+    float: right;
+}
+
+.contact-section .listing-filter input {
+    margin-right: 0 !important;
+}
+/*end contact*/
+
+
+/*start of media queries*************/
+@media screen and (min-width: 992px) {
+    .download-section .down-content {
+        left: -8vw;
+    }
+
+    .download-section .download-img-box {
+        right: -8vw;
+    }
+}
+
+
+@media screen and (max-width: 991px) {
+    .hero__form.v3 {
+        float: left;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .hero.v1 {
+        background-image: url(../../../images/header/hero_5-ar.jpg)
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .contact-section-container {
+        background-image: url("../../../images/header/hero_5-sm-ar.jpg");
+        background-position: right;
+    }
+}
+/*end of media queries*************/

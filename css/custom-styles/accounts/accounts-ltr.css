@@ -1,0 +1,12 @@
+/*start account styles*/
+.btn.v8,
+.account-details,
+.account-status {
+    float: right;
+}
+
+.account-status i,
+.account-details i {
+    margin-right: 10px;
+}
+/*end account styles*/

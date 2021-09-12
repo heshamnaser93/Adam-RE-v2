@@ -1,0 +1,114 @@
+/*start adding property*/
+/*start nav tabs*/
+.add-property .main-tabs .tab-num {
+    margin-left: 10px;
+}
+
+.main-tabs.list-details-tab .nav-item a:after {
+    right: 12px;
+}
+/*end nav tabs*/
+
+
+/*start property page one*/
+.add-btn {
+    margin-right: 10px;
+}
+
+.add-btn i,
+.del-btn i {
+    margin-left: 5px;
+}
+
+.btn.v8.next-btn,
+.btn.v8.prev-btn,
+.btn.v8.save-btn {
+    left: 0;
+    float: left;
+}
+
+.btn.v8.prev-btn {
+    left: 20px;
+}
+
+.btn.v8.next-btn i {
+    padding-right: 5px;
+}
+
+.btn.v8.prev-btn i {
+    padding-left: 5px;
+    margin-right: 0;
+    margin-left: 5px;
+}
+/*end property page one*/
+
+
+/*start property page two*/
+.filter-checkbox label::before {
+    left: auto;
+    right: 0;
+    margin-right: 0;
+    margin-left: 10px;
+}
+
+.filter-checkbox label {
+    padding-left: 0;
+    padding-right: 28px;
+    margin-right: 0;
+    margin-left: 20px
+}
+/*end property page two*/
+
+
+/*start property page three*/
+.list-details-tab.lang-tabs .nav-item:first-child {
+    margin-right: 0;
+}
+/*end property page three*/
+/*end adding property*/
+
+
+/*start media queries******/
+@media only screen and (max-width: 767px) {
+    .list-details-tab.main-tabs li.nav-item:first-child {
+        margin-right: 0;
+    }
+
+    .list-details-tab.main-tabs .nav-item a:after {
+        right: 30px;
+    }
+
+    .add-property .main-tabs .tab-num {
+        margin-left: 5px;
+    }
+
+    .filter-checkbox label {
+        margin-right: 20px;
+    }
+}
+
+@media only screen and (min-width: 576px) {
+    #translation .prop-btns {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .del-btn {
+        margin-right: 15px;
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    .list-details-tab.main-tabs .nav-item a:after {
+        right: 20px;
+    }
+}
+
+@media only screen and (max-width: 379px) {
+    .list-details-tab.main-tabs .nav-item a:after {
+        right: 5px;
+    }
+}
+/*end media queries******/

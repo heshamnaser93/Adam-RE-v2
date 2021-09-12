@@ -1,0 +1,29 @@
+/*start contact style*/
+.contact-info-item .phone-num {
+    direction: ltr;
+}
+
+.contact-details .social-buttons li:first-child {
+    padding-left: 10px;
+}
+
+.contact-map.v1 {
+    direction: ltr;
+    left: auto;
+    right: 0;
+}
+
+.btn.v7 i {
+    margin-left: 10px;
+}
+/*end contact style*/
+
+
+
+/*start media queries**********/
+@media screen and (min-width: 992px) {
+    .contact-form {
+        padding-right: 100px;
+    }
+}
+/*end media queries**********/

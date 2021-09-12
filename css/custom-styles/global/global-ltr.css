@@ -1,0 +1,94 @@
+/*global ltr font style*/
+body, p, h1, h2, h3, h4, h5, ::placeholder, label, a {
+    font-family: 'Mukta', sans-serif !important;
+}
+/*global ltr font style*/
+
+
+/*start global styles******/
+/*Breadcrumb section*/
+.breadcrumb-menu span::before {
+    right: -6px;
+    left: auto;
+}
+
+.breadcrumb-menu span:first-of-type,
+.breadcrumb-menu span:first-of-type a {
+    padding-left: 0;
+}
+
+.breadcrumb-menu span:last-of-type {
+    padding-right: 0;
+}
+/*Breadcrumb section*/
+
+
+/*start select2*/
+.select2 .selection .select2-selection .select2-selection__rendered:after {
+    right: 20px;
+}
+
+.select2-dropdown.filtering-select2 .select2-results__option {
+    text-align: left !important;
+    padding-left: 20px;
+}
+/*end select2*/
+
+
+/*single property box*/
+.feature_text {
+    right: 0;
+    left: auto;
+}
+
+.single-property-box .property-location i {
+    margin-right: 5px;
+    margin-left: 0;
+}
+
+.single-property-box .property-feature img,
+.single-property-box .property-author img {
+    margin-right: 5px;
+}
+
+.single-property-box .trend-left p {
+    padding-left: 18px;
+}
+/*single property box*/
+
+
+/*start scroll to top*/
+.scrolltotop {
+   left: auto;
+    right: 30px;
+}
+/*end scroll to top*/
+
+
+/*start login-popup*/
+#user-login-popup .modal-header .close {
+    right: 40px;
+    left: auto;
+}
+/*end login-popup*/
+
+
+/*start fixed-social*/
+.fixed-social {
+    left: 0;
+    right: auto;
+    border-top-right-radius: 27px;
+    border-bottom-right-radius: 27px;
+}
+/*end fixed-social*/
+/*end global styles******/
+
+
+
+/*start media queries***********/
+@media screen and (max-width: 575px) {
+    #login-form .res-box .row {
+        right: -5px;
+    }
+}
+/*end media queries***********/

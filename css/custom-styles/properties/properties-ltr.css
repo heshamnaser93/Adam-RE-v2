@@ -1,0 +1,38 @@
+/*start listing filters*/
+.nav.item-filter-list li:first-child {
+    margin-left: 0;
+}
+/*start listing filters*/
+
+
+/*start properties content --grid-view*/
+.properties-content .filter-sorting {
+    float: right !important;
+}
+/*end properties content --grid-view*/
+
+
+/*start properties content --list-view*/
+#list-view .single-property-box .property-title-box h4,
+#list-view .single-property-box .property-feature {
+    text-align: left;
+}
+
+#list-view .single-property-box .property-location i{
+    margin-left: 0;
+}
+
+#list-view .single-property-box .trend-left {
+    text-align: right;
+}
+
+#list-view .view-prop-btn .btn {
+    right: 50px;
+}
+/*end properties content --list-view*/
+
+
+
+/*start media queries*****/
+
+/*end media queries*****/

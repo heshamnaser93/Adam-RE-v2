@@ -1,0 +1,103 @@
+/*global ltr font style*/
+body, p, h1, h2, h3, h4, h5, ::placeholder, label, a {
+    font-family: 'Tajawal', sans-serif !important;
+}
+/*global ltr font style*/
+
+
+/*start global styles******/
+/*Breadcrumb section*/
+.breadcrumb-menu span::before {
+    left: -2px;
+    right: auto;
+}
+
+.breadcrumb-menu span:first-of-type,
+.breadcrumb-menu span:first-of-type a {
+    padding-right: 0;
+}
+
+.breadcrumb-menu span:last-of-type {
+    padding-left: 0;
+}
+/*Breadcrumb section*/
+
+
+/*start select2*/
+.select2 .selection .select2-selection .select2-selection__rendered:after {
+    left: 20px;
+}
+
+.select2-dropdown.filtering-select2 .select2-results__option {
+    text-align: right !important;
+    padding-right: 20px;
+}
+/*end select2*/
+
+
+/*single property box*/
+.feature_text {
+    left: 0;
+    right: auto;
+}
+
+.single-property-box .property-location i {
+    margin-left: 5px;
+    margin-right: 0;
+}
+
+.single-property-box .property-feature img,
+.single-property-box .property-author img {
+    margin-left: 5px;
+}
+
+.single-property-box .trend-left p {
+    padding-right: 30px;
+}
+
+.single-property-box .trend-left span {
+    margin-right: 0;
+    margin-left: 7px;
+}
+
+.single-property-box .trend-left span.price-dir {
+    direction: ltr;
+}
+/*single property box*/
+
+
+/*start scroll to top*/
+.scrolltotop {
+    left: 30px;
+    right: auto;
+}
+/*end scroll to top*/
+
+
+/*start login-popup*/
+#user-login-popup .modal-header .close {
+    right: auto;
+    left: 40px;
+}
+/*end login-popup*/
+
+
+/*start fixed-social*/
+.fixed-social {
+    right: 0;
+    left: auto;
+    border-top-left-radius: 27px;
+    border-bottom-left-radius: 27px;
+}
+/*end fixed-social*/
+/*end global styles******/
+
+
+
+/*start media queries***********/
+@media screen and (max-width: 575px) {
+    #login-form .res-box .row {
+        left: -5px;
+    }
+}
+/*end media queries***********/

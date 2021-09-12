@@ -1,0 +1,35 @@
+/*start our recent*/
+.recent-sec .blog-cat {
+    color: #F26C61;
+    display: inline-block;
+}
+
+.recent-sec .recent-icn {
+    margin-top: -3px;
+    width: 10px !important;
+    height: 15px;
+}
+
+.recent-sec .single-blog-item .card-title a:hover {
+    color: #F26C61;
+}
+
+.recent-sec .bottom-content p span:before {
+    display: none;
+}
+
+.recent-sec .cal-icn {
+    margin-top: -5px;
+    width: 12px !important;
+    height: 14px;
+}
+/*end our recent*/
+
+
+/*start media queries********/
+@media only screen and (max-width: 1199px) {
+    .sidebar-left {
+        display: none;
+    }
+}
+/*end media queries********/

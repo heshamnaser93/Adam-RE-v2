@@ -1,0 +1,27 @@
+/*start account styles*/
+.btn.v8,
+.account-details,
+.account-status {
+    float: left;
+}
+
+.account-status i,
+.account-details i {
+    margin-left: 10px;
+}
+/*end account styles*/
+
+
+/*start media query*/
+@media screen and (max-width: 1199px) {
+    .account-status {
+        width: 311px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .account-status {
+        width: 297px;
+    }
+}
+/*end media query*/

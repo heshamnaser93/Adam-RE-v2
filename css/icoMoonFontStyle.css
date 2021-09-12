@@ -1,0 +1,83 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?8lbce6');
+  src:  url('../fonts/icomoon.eot?8lbce6#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?8lbce6') format('truetype'),
+    url('../fonts/icomoon.woff?8lbce6') format('woff'),
+    url('../fonts/icomoon.svg?8lbce6#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-ic-area:before {
+  content: "\e900";
+  color: #1b4c8e;
+}
+.icon-ic-bath:before {
+  content: "\e901";
+  color: #1b4c8e;
+}
+.icon-ic-beds:before {
+  content: "\e902";
+  color: #1b4c8e;
+}
+.icon-ic-city:before {
+  content: "\e903";
+  color: #1b4c8e;
+}
+.icon-ic-country:before {
+  content: "\e904";
+  color: #1b4c8e;
+}
+.icon-ic-Distance-To-The-Airport:before {
+  content: "\e905";
+  color: #1b4c8e;
+}
+.icon-ic-Distance-To-The-Center:before {
+  content: "\e906";
+  color: #1b4c8e;
+}
+.icon-ic-Distance-ToThe-Beach:before {
+  content: "\e907";
+  color: #1b4c8e;
+}
+.icon-ic-features:before {
+  content: "\e908";
+  color: #1b4c8e;
+}
+.icon-ic-for:before {
+  content: "\e909";
+  color: #1b4c8e;
+}
+.icon-ic-parking:before {
+  content: "\e90a";
+  color: #1b4c8e;
+}
+.icon-ic-price:before {
+  content: "\e90b";
+  color: #1b4c8e;
+}
+.icon-ic-squareFeet:before {
+  content: "\e90c";
+  color: #1b4c8e;
+}
+.icon-ic-type:before {
+  content: "\e90d";
+  color: #1b4c8e;
+}

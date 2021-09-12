@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+
+<head>
+    <!-- Metas -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="LionCoders" />
+    <!-- Links -->
+    <link rel="icon" type="image/png" href="images/icons/fave_icon.ico" />
+    <!-- google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+    <!-- Plugins CSS -->
+    <link href="css/plugin-rtl.css" rel="stylesheet" />
+    <!-- style CSS -->
+    <link href="css/style-rtl.css" rel="stylesheet" />
+    <!-- Document Title -->
+    <title>آدم عقارات | اضافة عقار</title>
+    <!-- Font style -->
+    <link href="https://fonts.googleapis.com/css?family=Tajawal&display=swap" rel="stylesheet">
+    <!-- Select 2 -->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.0.12/dist/css/select2.min.css" rel="stylesheet" />
+    <!-- Custom Styles -->
+    <link href="css/custom-styles/global/global.css" rel="stylesheet" />
+    <link href="css/custom-styles/global/global-rtl.css" rel="stylesheet" />
+    <link href="css/custom-styles/header/header-global.css" rel="stylesheet" />
+    <link href="css/custom-styles/header/header-rtl.css" rel="stylesheet" />
+    <link href="css/custom-styles/footer/footer-global.css" rel="stylesheet" />
+    <link href="css/custom-styles/footer/footer-rtl.css" rel="stylesheet" />
+    <link href="css/custom-styles/properties/add-property-global.css" rel="stylesheet" />
+    <link href="css/custom-styles/properties/add-property-rtl.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!--Preloader starts-->
+    <div class="preloader js-preloader">
+        <img src="images/preloader.gif" alt="...">
+    </div>
+    <!--Preloader ends-->
+
+
+    <!--Page Wrapper starts-->
+    <div class="page-wrapper">
+        <!--header starts-->
+        <header class="header transparent scroll-hide">
+            <!--Header Top Section Starts-->
+            <div class="header-top-section">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-sm-4 col-12 header-dropdowns">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="select-lang nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown09" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">العربية</a>
+                                        <div class="dropdown-menu" aria-labelledby="dropdown09">
+                                            <a class="dropdown-item" href="add-property.html">الانجليزية</a>
+                                            <a class="dropdown-item" href="#">التركية</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="select-curr">
+                                        <select class="js-example-basic-single select2-header" name="state">
+                                            <option value="AL">ليرة تركي</option>
+                                            <option value="WY">دولار</option>
+                                            <option value="WY">يورو</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-sm-8 col-12 contact-links">
+                            <div class="header-top-center">
+                                <ul>
+                                    <li><i class="fa fa-phone"></i> <a href="https://wa.me/905522222265">+90 552 222 2265</a></li>
+                                    <li><i class="fas fa-envelope-open-text"></i><a href="https://info@adam-gr.com">info@adam-gr.com</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4 col-12 login-dropdown">
+                            <div class="menu-btn">
+                                <div class="add-list">
+                                    <a id="login_btn_id" class="login-btn"><i class="fas fa-user-circle"></i>دخول<i class="fas fa-chevron-down arr-down-icon"></i></a>
+                                    <ul class="dropdown login-drop">
+                                        <li><a href="accounts.html">الملف الشخصي</a></li>
+                                        <li><a href="add-property.html">اضف عقار</a></li>
+                                        <li><a href="properties.html">العقارات</a></li>
+                                        <li><a href="#" data-toggle="modal" data-target="#user-login-popup">تسجيل خروج</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Header Top Section Ends-->
+
+            <!--Main Menu starts-->
+            <div class="site-navbar-wrap v2">
+                <div class="container">
+                    <div class="site-navbar">
+                        <div class="row align-items-center">
+                            <div class="col-lg-2 col-sm-4 col-6">
+                                <a class="navbar-brand" href="index-rtl.html">
+                                    <img src="images/white-logo.png" alt="logo" class="img-fluid fluid-second">
+                                </a>
+                            </div>
+                            <div class="col-lg-8 col-sm-8 col-6 order-2 order-lg-1 pl-xs-0">
+                                <nav class="site-navigation text-center">
+                                    <div class="container">
+                                        <ul class="site-menu js-clone-nav d-none d-lg-block">
+                                            <li class="has-children">
+                                                <a href="index.html">الرئيسية</a>
+                                            </li>
+                                            <li class="has-children">
+                                                <a class="active" href="properties.html">العقارات</a>
+                                            </li>
+                                            <li class="has-children">
+                                                <a href="news.html">الاخبار</a>
+                                            </li>
+                                            <li class="has-children">
+                                                <a href="about.html">من نحن</a>
+                                            </li>
+                                            <li class="has-children">
+                                                <a href="contact.html">تواصل معنا</a>
+                                            </li>
+                                            <li class="login-drop-container">
+                                                <a id="menu_login_btn_id" class="login-btn">
+                                                    <img src="images/agents/agent_1.jpg" class="login-img"/>
+                                                    طارق الصابوني
+                                                    <i class="fas fa-chevron-down arr-down-icon"></i>
+                                                </a>
+                                                <ul class="dropdown login-drop hide-drop">
+                                                    <li><a href="accounts.html">الملف الشخصي</a></li>
+                                                    <li><a href="add-property.html">اضف عقار</a></li>
+                                                    <li><a href="properties.html">العقارات</a></li>
+                                                    <li><a href="#" data-toggle="modal" data-target="#user-login-popup">تسجيل خروج</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <div class="add-prop-btn-box">
+                                                    <a class="btn v1" href="add-property.html"><i class="lnr lnr-home"></i>اضف عقار</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <ul class="menu-social-buttons">
+                                                    <li><a href="https://www.instagram.com/adam4it/"><i class="fab fa-instagram"></i></a></li>
+                                                    <li><a href="https://www.youtube.com/channel/UCfSzzEmPr9PtyGW2RtuEYJw"><i class="fab fa-youtube"></i></a></li>
+                                                    <li><a href="https://www.facebook.com/Adam4IT/"><i class="fab fa-facebook-f"></i></a></li>
+                                                    <li><a href="https://twitter.com/Adam4It"><i class="fab fa-twitter"></i></a></li>
+                                                    <li><a href="https://wa.me/905522222265"><i class="fab fa-whatsapp"></i></a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </nav>
+
+                                <div class="d-lg-none sm-right menu-icn">
+                                    <a href="#" class="mobile-bar js-menu-toggle">
+                                        <span class="lnr lnr-menu"></span>
+                                    </a>
+                                </div>
+                                <!--mobile-menu starts -->
+                                <div class="site-mobile-menu">
+                                    <div class="site-mobile-menu-header">
+                                        <div class="site-mobile-menu-close  js-menu-toggle">
+                                            <span class="lnr lnr-cross"></span> </div>
+                                    </div>
+
+                                    <div class="header-dropdowns">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="select-lang nav-item dropdown col-6">
+                                                    <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown10" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">العربية</a>
+                                                    <div class="dropdown-menu" aria-labelledby="dropdown09">
+                                                        <a class="dropdown-item" href="add-property.html">الانجليزية</a>
+                                                        <a class="dropdown-item" href="#">التركية</a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="select-curr col-6">
+                                                    <select class="js-example-basic-single select2-header" name="state">
+                                                        <option value="AL">ليرة تركي</option>
+                                                        <option value="WY">دولار</option>
+                                                        <option value="WY">يورو</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="site-mobile-menu-body"></div>
+
+                                    <div class="header-bottom-contact">
+                                        <ul>
+                                            <li><i class="fas fa-envelope-open-text"></i><a href="https://info@adam-gr.com">info@adam-gr.com</a></li>
+                                            <li><i class="fa fa-phone"></i> <a href="https://wa.me/905522222265">+90 552 222 2265</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!--mobile-menu ends-->
+                            </div>
+                            <div class="col-lg-2 col-4 order-1 order-lg-2 text-right pr-xs-0 add-prop-btn">
+                                <div class="menu-btn">
+                                    <div class="add-list">
+                                        <a class="btn v1" href="add-property.html"><i class="lnr lnr-home"></i>اضف عقار</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Main Menu ends-->
+        </header>
+        <!--Header ends-->
+
+
+        <!--Add Listing starts-->
+        <div class="list-details-section section-padding add_list pt-100 add-property">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul class="nav nav-tabs list-details-tab main-tabs">
+                            <li class="nav-item active">
+                                <a data-toggle="tab" href="#property"><span class="tab-num" data-toggle="tab" href="#property">1</span>العقار</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a data-toggle="tab" href="#characteristics"><span class="tab-num" data-toggle="tab" href="#Characteristics">2</span>المميزات</a>
+                            </li>
+                            <li class="nav-item">
+                                <a data-toggle="tab" href="#translation"><span class="tab-num" data-toggle="tab" href="#translation">3</span>الترجمة</a>
+                            </li>
+                        </ul>
+                        <form action="">
+                            <div class="tab-content my-30 add_list_content">
+                                <div class="tab-pane fade show active" id="property">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label>رقم العقار</label>
+                                                <input type="text" class="form-control filter-input" placeholder="رقم العقار">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label>اسم العقار</label>
+                                                <input type="text" class="form-control filter-input" placeholder="اسم العقار">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label>نوع العقار</label>
+                                                <input type="text" class="form-control filter-input" placeholder="نوع العقار">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 select_input">
+                                            <label>الاصناف</label>
+                                            <select class="js-example-basic-single jSelectBox" name="state">
+                                                <option>الاول</option>
+                                                <option>الثاني</option>
+                                                <option>الثالث</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-4 select_input">
+                                            <label>البلد</label>
+                                            <select class="js-example-basic-single jSelectBox" name="state">
+                                                <option>تركيا</option>
+                                                <option>قطر</option>
+                                                <option>ايطاليا</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-4 select_input">
+                                            <label>المدينة</label>
+                                            <select class="js-example-basic-single jSelectBox" name="state">
+                                                <option>اسطنبول</option>
+                                                <option>الدوحة</option>
+                                                <option>روما</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-4 select_input">
+                                            <label>المنطقة</label>
+                                            <select class="js-example-basic-single jSelectBox" name="state">
+                                                <option>نيويورك</option>
+                                                <option>فلوريدا</option>
+                                                <option>لاس فيجاس</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-4 select_input">
+                                            <label>سنة الانشاء</label>
+                                            <select class="js-example-basic-single jSelectBox" name="state">
+                                                <option>2020</option>
+                                                <option>2019</option>
+                                                <option>2018</option>
+                                                <option>2017</option>
+                                                <option>2016</option>
+                                                <option>2015</option>
+                                                <option>2014</option>
+                                                <option>2013</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-4 select_input">
+                                            <label>تاريخ التسليم</label>
+                                            <select class="js-example-basic-single jSelectBox" name="state">
+                                                <option>2021</option>
+                                                <option>2022</option>
+                                                <option>2023</option>
+                                                <option>2024</option>
+                                                <option>2025</option>
+                                                <option>2026</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-4 select_input">
+                                            <label>كيفية الدفع</label>
+                                            <select class="js-example-basic-single jSelectBox" name="state">
+                                                <option>Cash</option>
+                                                <option>Master</option>
+                                                <option>Credit</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-4 select_input">
+                                            <label>العملة</label>
+                                            <select class="js-example-basic-single jSelectBox" name="state">
+                                                <option>USD</option>
+                                                <option>TRY</option>
+                                                <option>Euro</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label>العنوان</label>
+                                                <input type="text" class="form-control filter-input" placeholder="العنوان">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label>اسم المكان</label>
+                                                <input type="text" class="form-control filter-input" placeholder="الخريطة">
+                                            </div>
+
+                                            <div class="contact-map v1">
+                                                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2965.0824050173574!2d-93.63905729999999!3d41.998507000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sWebFilings%2C+University+Boulevard%2C+Ames%2C+IA!5e0!3m2!1sen!2sus!4v1390839289319"  style="border:0"></iframe>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label>المسافة للشاطئ</label>
+                                                <input type="text" class="form-control filter-input" placeholder="المسافة للشاطئ">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label>المسافة لمركز المدينة</label>
+                                                <input type="text" class="form-control filter-input" placeholder="المسافة لمركز المدينة">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label>المسافة للمطار</label>
+                                                <input type="text" class="form-control filter-input" placeholder="المسافة للمطار">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="container">
+                                                <div class="row dash-heading room-dash">
+                                                    <span class="col-lg-11 col-md-10 col-8 add-span">الغرف</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 select_input">
+                                            <label>عدد الغرف</label>
+                                            <select class="js-example-basic-single jSelectBox" name="state">
+                                                <option>1+1</option>
+                                                <option>2+1</option>
+                                                <option>3+1</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label>السعر من</label>
+                                                <input type="number" class="form-control filter-input" placeholder="من">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label>الى</label>
+                                                <input type="number" class="form-control filter-input" placeholder="الى">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 select_input">
+                                            <label>الحمامات</label>
+                                            <select class="js-example-basic-single jSelectBox" name="state">
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label>المساحة من</label>
+                                                <input type="number" class="form-control filter-input" placeholder="من">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label>الى</label>
+                                                <input type="number" class="form-control filter-input" placeholder="الى">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label for="list_info">ملاحظات</label>
+                                                <textarea class="form-control" id="list_info" rows="1" placeholder="ملاحظات"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <button class="btn col-md-2 col-4 del-btn"><i class="fas fa-trash-alt"></i>حذف</button>
+                                                    <button class="btn col-lg-1 col-md-2 col-4 add-btn"><i class="fas fa-plus"></i>اضافة</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 upload_inputs">
+                                            <div class="dash-heading">المستندات</div>
+                                            <div class="form-group">
+                                                <div class="add-listing__input-file-box">
+                                                    <input class="add-listing__input-file" type="file" name="file">
+                                                    <div class="add-listing__input-file-wrap">
+                                                        <i class="lnr lnr-cloud-upload"></i>
+                                                        <p>اضغط هنا لرفه المستندات</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 upload_inputs">
+                                            <div class="dash-heading">عدد الطوابق</div>
+                                            <div class="form-group">
+                                                <div class="add-listing__input-file-box">
+                                                    <input class="add-listing__input-file" type="file" name="file">
+                                                    <div class="add-listing__input-file-wrap">
+                                                        <i class="lnr lnr-cloud-upload"></i>
+                                                        <p>اضغط هنا لرفع الصور</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 upload_inputs">
+                                            <div class="dash-heading">الصور</div>
+                                            <div class="form-group">
+                                                <div class="add-listing__input-file-box">
+                                                    <input class="add-listing__input-file" type="file" name="file">
+                                                    <div class="add-listing__input-file-wrap">
+                                                        <i class="lnr lnr-cloud-upload"></i>
+                                                        <p>اضغط هنا لرفع الصور</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 next-page-li">
+                                            <a class="btn v8 next-btn">
+                                                التالي<i class="fas fa-arrow-left"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="characteristics">
+                                    <div class="row">
+                                        <div class="col-md-12 mb-5">
+                                            <div class="dash-heading">ميزات البناء</div>
+                                            <div class="filter-checkbox">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="form-group col-sm-3 col-6">
+                                                            <input id="check-a" type="checkbox" name="check">
+                                                            <label for="check-a">ميزة</label>
+                                                        </div>
+                                                        <div class="form-group col-sm-3 col-6">
+                                                            <input id="check-b" type="checkbox" name="check">
+                                                            <label for="check-b">ميزة</label>
+                                                        </div>
+                                                        <div class="form-group col-sm-3 col-6">
+                                                            <input id="check-c" type="checkbox" name="check">
+                                                            <label for="check-c">ميزة</label>
+                                                        </div>
+                                                        <div class="form-group col-sm-3 col-6">
+                                                            <input id="check-d" type="checkbox" name="check">
+                                                            <label for="check-d">ميزة</label>
+                                                        </div>
+                                                        <div class="form-group col-sm-3 col-6">
+                                                            <input id="check-e" type="checkbox" name="check">
+                                                            <label for="check-e">ميزة</label>
+                                                        </div>
+                                                        <div class="form-group col-sm-3 col-6">
+                                                            <input id="check-f" type="checkbox" name="check">
+                                                            <label for="check-f">ميزة</label>
+                                                        </div>
+                                                        <div class="form-group col-sm-3 col-6">
+                                                            <input id="check-g" type="checkbox" name="check">
+                                                            <label for="check-g">ميزة</label>
+                                                        </div>
+                                                        <div class="form-group col-sm-3 col-6">
+                                                            <input id="check-h" type="checkbox" name="check">
+                                                            <label for="check-h">ميزة</label>
+                                                        </div>
+                                                        <div class="form-group col-sm-3 col-6">
+                                                            <input id="check-i" type="checkbox" name="check">
+                                                            <label for="check-i">ميزة</label>
+                                                        </div>
+                                                        <div class="form-group col-sm-3 col-6">
+                                                            <input id="check-j" type="checkbox" name="check">
+                                                            <label for="check-j">ميزة</label>
+                                                        </div>
+                                                        <div class="form-group col-sm-3 col-6">
+                                                            <input id="check-k" type="checkbox" name="check">
+                                                            <label for="check-k">ميزة</label>
+                                                        </div>
+                                                        <div class="form-group col-sm-3 col-6">
+                                                            <input id="check-l" type="checkbox" name="check">
+                                                            <label for="check-l">ميزة</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-12 mb-5">
+                                            <div class="dash-heading">ميزات خارجية</div>
+                                            <div class="filter-checkbox">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="form-group col-sm-3 col-6">
+                                                            <input id="check-a1" type="checkbox" name="check">
+                                                            <label for="check-a1">ميزة</label>
+                                                        </div>
+                                                        <div class="form-group col-sm-3 col-6">
+                                                            <input id="check-b1" type="checkbox" name="check">
+                                                            <label for="check-b1">ميزة</label>
+                                                        </div>
+                                                        <div class="form-group col-sm-3 col-6">
+                                                            <input id="check-c1" type="checkbox" name="check">
+                                                            <label for="check-c1">ميزة</label>
+                                                        </div>
+                                                        <div class="form-group col-sm-3 col-6">
+                                                            <input id="check-d1" type="checkbox" name="check">
+                                                            <label for="check-d1">ميزة</label>
+                                                        </div>
+                                                        <div class="form-group col-sm-3 col-6">
+                                                            <input id="check-e1" type="checkbox" name="check">
+                                                            <label for="check-e1">ميزة</label>
+                                                        </div>
+                                                        <div class="form-group col-sm-3 col-6">
+                                                            <input id="check-f1" type="checkbox" name="check">
+                                                            <label for="check-f1">ميزة</label>
+                                                        </div>
+                                                        <div class="form-group col-sm-3 col-6">
+                                                            <input id="check-g1" type="checkbox" name="check">
+                                                            <label for="check-g1">ميزة</label>
+                                                        </div>
+                                                        <div class="form-group col-sm-3 col-6">
+                                                            <input id="check-h1" type="checkbox" name="check">
+                                                            <label for="check-h1">ميزة</label>
+                                                        </div>
+                                                        <div class="form-group col-sm-3 col-6">
+                                                            <input id="check-i1" type="checkbox" name="check">
+                                                            <label for="check-i1">ميزة</label>
+                                                        </div>
+                                                        <div class="form-group col-sm-3 col-6">
+                                                            <input id="check-j1" type="checkbox" name="check">
+                                                            <label for="check-j1">ميزة</label>
+                                                        </div>
+                                                        <div class="form-group col-sm-3 col-6">
+                                                            <input id="check-k1" type="checkbox" name="check">
+                                                            <label for="check-k1">ميزة</label>
+                                                        </div>
+                                                        <div class="form-group col-sm-3 col-6">
+                                                            <input id="check-l1" type="checkbox" name="check">
+                                                            <label for="check-l1">ميزة</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-12 mb-5">
+                                            <div class="dash-heading">ميزات داخلية</div>
+                                            <div class="filter-checkbox">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="form-group col-sm-3 col-6">
+                                                            <input id="check-a2" type="checkbox" name="check">
+                                                            <label for="check-a2">ميزة</label>
+                                                        </div>
+                                                        <div class="form-group col-sm-3 col-6">
+                                                            <input id="check-b2" type="checkbox" name="check">
+                                                            <label for="check-b2">ميزة</label>
+                                                        </div>
+                                                        <div class="form-group col-sm-3 col-6">
+                                                            <input id="check-c2" type="checkbox" name="check">
+                                                            <label for="check-c2">ميزة</label>
+                                                        </div>
+                                                        <div class="form-group col-sm-3 col-6">
+                                                            <input id="check-d2" type="checkbox" name="check">
+                                                            <label for="check-d2">ميزة</label>
+                                                        </div>
+                                                        <div class="form-group col-sm-3 col-6">
+                                                            <input id="check-e2" type="checkbox" name="check">
+                                                            <label for="check-e2">ميزة</label>
+                                                        </div>
+                                                        <div class="form-group col-sm-3 col-6">
+                                                            <input id="check-f2" type="checkbox" name="check">
+                                                            <label for="check-f2">ميزة</label>
+                                                        </div>
+                                                        <div class="form-group col-sm-3 col-6">
+                                                            <input id="check-g2" type="checkbox" name="check">
+                                                            <label for="check-g2">ميزة</label>
+                                                        </div>
+                                                        <div class="form-group col-sm-3 col-6">
+                                                            <input id="check-h2" type="checkbox" name="check">
+                                                            <label for="check-h2">ميزة</label>
+                                                        </div>
+                                                        <div class="form-group col-sm-3 col-6">
+                                                            <input id="check-i2" type="checkbox" name="check">
+                                                            <label for="check-i2">ميزة</label>
+                                                        </div>
+                                                        <div class="form-group col-sm-3 col-6">
+                                                            <input id="check-j2" type="checkbox" name="check">
+                                                            <label for="check-j2">ميزة</label>
+                                                        </div>
+                                                        <div class="form-group col-sm-3 col-6">
+                                                            <input id="check-k2" type="checkbox" name="check">
+                                                            <label for="check-k2">ميزة</label>
+                                                        </div>
+                                                        <div class="form-group col-sm-3 col-6">
+                                                            <input id="check-l2" type="checkbox" name="check">
+                                                            <label for="check-l2">ميزة</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-12 mb-5">
+                                            <div class="dash-heading">ميزات المكان</div>
+                                            <div class="filter-checkbox">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="form-group col-sm-3 col-6">
+                                                            <input id="check-a3" type="checkbox" name="check">
+                                                            <label for="check-a3">ميزة</label>
+                                                        </div>
+                                                        <div class="form-group col-sm-3 col-6">
+                                                            <input id="check-b3" type="checkbox" name="check">
+                                                            <label for="check-b3">ميزة</label>
+                                                        </div>
+                                                        <div class="form-group col-sm-3 col-6">
+                                                            <input id="check-c3" type="checkbox" name="check">
+                                                            <label for="check-c3">ميزة</label>
+                                                        </div>
+                                                        <div class="form-group col-sm-3 col-6">
+                                                            <input id="check-d3" type="checkbox" name="check">
+                                                            <label for="check-d3">ميزة</label>
+                                                        </div>
+                                                        <div class="form-group col-sm-3 col-6">
+                                                            <input id="check-e3" type="checkbox" name="check">
+                                                            <label for="check-e3">ميزة</label>
+                                                        </div>
+                                                        <div class="form-group col-sm-3 col-6">
+                                                            <input id="check-f3" type="checkbox" name="check">
+                                                            <label for="check-f3">ميزة</label>
+                                                        </div>
+                                                        <div class="form-group col-sm-3 col-6">
+                                                            <input id="check-g3" type="checkbox" name="check">
+                                                            <label for="check-g3">ميزة</label>
+                                                        </div>
+                                                        <div class="form-group col-sm-3 col-6">
+                                                            <input id="check-h3" type="checkbox" name="check">
+                                                            <label for="check-h3">ميزة</label>
+                                                        </div>
+                                                        <div class="form-group col-sm-3 col-6">
+                                                            <input id="check-i3" type="checkbox" name="check">
+                                                            <label for="check-i3">ميزة</label>
+                                                        </div>
+                                                        <div class="form-group col-sm-3 col-6">
+                                                            <input id="check-j3" type="checkbox" name="check">
+                                                            <label for="check-j3">ميزة</label>
+                                                        </div>
+                                                        <div class="form-group col-sm-3 col-6">
+                                                            <input id="check-k3" type="checkbox" name="check">
+                                                            <label for="check-k3">ميزة</label>
+                                                        </div>
+                                                        <div class="form-group col-sm-3 col-6">
+                                                            <input id="check-l3" type="checkbox" name="check">
+                                                            <label for="check-l3">ميزة</label>
+                                                        </div>
+
+                                                        <div class="col-md-12 prop-btns">
+                                                            <a class="btn v8 next-btn">
+                                                                التالي<i class="fas fa-arrow-left"></i>
+                                                            </a>
+
+                                                            <a class="btn v8 prev-btn">
+                                                                <i class="fas fa-arrow-right"></i>السابق
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="translation">
+                                    <div class="row mb-30">
+                                        <div class="col-md-12">
+                                            <ul class="nav nav-tabs list-details-tab lang-tabs mb-20" id="lionTab" role="tablist">
+                                                <li class="nav-item active">
+                                                    <a class="active" data-toggle="tab" href="#first-lang-tab">الفرنسية</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a data-toggle="tab" href="#second-lang-tab">الانجليزية</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="col-md-12">
+                                            <div class="tab-content mar-top-30 mar-bot-20" id="lionTabContent">
+                                                <div class="tab-pane fade active show" id="first-lang-tab">
+                                                    <div class="container">
+                                                        <div class="row">
+                                                            <div class="col-12">
+                                                                <div class="form-group">
+                                                                    <label>الاسم</label>
+                                                                    <input type="text" class="form-control filter-input" placeholder="الاسم">
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label for="list_info">الوصف</label>
+                                                                    <textarea class="form-control" id="list_info1" rows="1" placeholder="الوصف"></textarea>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-12 prop-btns">
+                                                                <a class="btn v8 next-btn">
+                                                                    حفظ<i class="fas fa-save"></i>
+                                                                </a>
+
+                                                                <a class="btn v8 prev-btn">
+                                                                    <i class="fas fa-arrow-right"></i>السابق
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="tab-pane fade" id="second-lang-tab">
+                                                    <div class="container">
+                                                        <div class="row">
+                                                            <div class="col-12">
+                                                                <div class="form-group">
+                                                                    <label>الاسم</label>
+                                                                    <input type="text" class="form-control filter-input" placeholder="الاسم">
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label for="list_info">الوصف</label>
+                                                                    <textarea class="form-control" id="list_info2" rows="1" placeholder="الوصف"></textarea>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-12 prop-btns">
+                                                                <a class="btn v8 save-btn">
+                                                                    حفظ<i class="fas fa-save"></i>
+                                                                </a>
+
+                                                                <a class="btn v8 prev-btn">
+                                                                    <i class="fas fa-arrow-right"></i>السابق
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Add Listing ends-->
+
+
+        <!-- Scroll to top starts-->
+        <span class="scrolltotop"><i class="lnr lnr-arrow-up"></i></span>
+        <!-- Scroll to top ends-->
+    </div>
+    <!--Page Wrapper ends-->
+
+
+    <!--Footer Starts-->
+    <div class="footer-wrapper v1">
+        <div class="footer-top-area">
+            <div class="container">
+                <div class="row nav-folderized">
+                    <div class="col-lg-3 col-md-6 col-sm-12 fot-block">
+                        <div class="footer-content">
+                            <a class="footer-brand" href="index-rtl.html">
+                                <img src="images/white-logo.png" alt="logo" class="img-fluid fluid-second">
+                            </a>
+                            <div class="company-desc">
+                                <p>لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليتصور طريقه وضع النصوص بالتصاميم سواء كانت تصاميم مطبوعه.</p>
+                                <br>
+                                <p>لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل.</p>
+                            </div>
+                            <div class="links">
+                                <a href="#"><img src="images/apple-icn.svg"/></a>
+                                <a href="#"><img src="images/google-icn.svg"/></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 fot-block">
+                        <div class="footer-content nav">
+                            <h2 class="title">اشهر المدن</h2>
+                            <ul class="list res-list">
+                                <li><a class="link-hov style2" href="#">اسطنبول</a></li>
+                                <li><a class="link-hov style2" href="#">طرابزون</a></li>
+                                <li><a class="link-hov style2" href="#">انطاليا</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 fot-block">
+                        <div class="footer-content">
+                            <h4 class="title">تواصل معنا</h4>
+                            <ul class="list footer-list mt-20">
+                                <li>
+                                    <div class="contact-info fot-locat">
+                                        <div class="text">Başak Mahallesi, Hürriyet Bulvari Caddesi, Yiğitler Sokak, Artan İş Merkezi, B Blok – 2. Kat – Daire : 23 34480 Başakşehir / İstanbul</div>
+                                    </div>
+                                </li>
+                                <li class="mail-li-item">
+                                    <div class="contact-info fot-mail">
+                                        <i class="fas fa-envelope-open"></i><div class="text"><a href="#">info@adam-gr.com</a></div>
+                                    </div>
+                                </li>
+                                <li class="phone-li-item">
+                                    <div class="contact-info fot-tel">
+                                        <i class="fas fa-phone-square-alt"></i><div class="text">+90 552 222 2265</div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="footer-social-wrap">
+                                <ul class="social-buttons style2">
+                                    <li><a href="https://wa.me/905522222265"><i class="fab fa-whatsapp"></i></a></li>
+                                    <li><a href="https://twitter.com/Adam4It"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="https://www.youtube.com/channel/UCfSzzEmPr9PtyGW2RtuEYJw"><i class="fab fa-youtube"></i></a></li>
+                                    <li><a href="https://www.facebook.com/Adam4IT/"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="https://www.instagram.com/adam4it/"><i class="fab fa-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 fot-block">
+                        <div class="footer-content nav">
+                            <h2 class="title">الصفحات</h2>
+                            <ul class="list res-list">
+                                <li><a class="link-hov style2" href="">الرئيسية</a></li>
+                                <li><a class="link-hov style2" href="">الخصائص</a></li>
+                                <li><a class="link-hov style2" href="">الاخبار</a></li>
+                                <li><a class="link-hov style2" href="">من نحن</a></li>
+                                <li><a class="link-hov style2" href="">تواصل معنا</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom-area">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-8 offset-md-2">
+                        <p class="copy-right">© 2020 <a href="https://www.adam-gr.com/" class="priv-cop">شركة آدم </a>جميع الحقوق محفوظة</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Footer ends-->
+
+
+    <!--login Modal starts-->
+    <div class="modal fade" id="user-login-popup">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="lnr lnr-cross"></i></span></button>
+                </div>
+                <div class="modal-body">
+                    <!--User Login section starts-->
+                    <div class="user-login-section">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h4 class="login-heading">تسجيل الدخول</h4>
+                                    <p class="login-p">قم بتسجيل الدخول لحسابك</p>
+                                    <form id="login-form" action="#" method="post">
+                                        <div class="form-group">
+                                            <label for="email">البريد الالكتروني</label>
+                                            <input type="email" name="email" id="email" tabindex="1" class="form-control" placeholder="البريد الالكتروني" value="">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="user_password">كلمة السر</label>
+                                            <input type="password" name="user_password" id="user_password" tabindex="2" class="form-control" placeholder="كلمة السر">
+                                        </div>
+
+                                        <p class="forget-pas"><a href="forget-password.html">نسيت كلمة السر؟</a></p>
+
+                                        <div class="res-box text-center mt-30">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <button type="button" class="btn v8 col-6 reg-btn" onclick="window.location.href= 'accounts-rtl.html' ">تسجيل</button>
+                                                    <button type="submit" class="btn v8 col-6 log-btn">دخول</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--User login section ends-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--login Modal ends-->
+
+
+    <!-- start fixed-icons -->
+    <div class="fixed-social">
+        <ul class="fixed-social-buttons">
+            <li><a href="https://www.instagram.com/adam4it/"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://www.youtube.com/channel/UCfSzzEmPr9PtyGW2RtuEYJw"><i class="fab fa-youtube"></i></a></li>
+            <li><a href="https://www.facebook.com/Adam4IT/"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="https://twitter.com/Adam4It"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://wa.me/905522222265"><i class="fab fa-whatsapp"></i></a></li>
+        </ul>
+    </div>
+    <!-- end fixed-icons -->
+
+
+    <!--Scripts starts-->
+    <!--plugin js-->
+    <script src="js/plugin.js"></script>
+    <script src="demo/js/demo.js"></script>
+    <!--google maps-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_8C7p0Ws2gUu7wo0b6pK9Qu7LuzX2iWY&amp;libraries=places&amp;callback=initAutocomplete"></script>
+    <!-- Select 2 -->
+    <script src="js/select2.full.min.js"></script>
+    <script src="js/custom/using-select2.js"></script>
+    <!-- Custom Js -->
+    <script src="js/custom/login-drop.js"></script>
+    <script src="js/custom/using-select2.js"></script>
+    <!--Main js-->
+    <script src="js/main.js"></script>
+    <!--Scripts ends-->
+</body>
+
+</html>

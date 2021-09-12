@@ -1,0 +1,14 @@
+/*start agents*/
+.address-list li {
+    float: left;
+}
+
+.address-list li span {
+    padding-right: 20px;
+    float: left;
+}
+
+.sidebar-content-right .btn.v8 {
+    margin-right: 10px;
+}
+/*end agents*/

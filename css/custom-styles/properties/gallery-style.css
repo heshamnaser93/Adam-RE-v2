@@ -1,0 +1,98 @@
+@import url('../../flaticon.css');
+@import url('../../animate.css');
+@import url('../../owl.css');
+@import url('../../jquery-ui.css');
+@import url('../../jquery.fancybox.min.css');
+
+
+/***
+====================================================================
+		Property Detail
+====================================================================
+***/
+
+.property-detail{
+	position: relative;
+}
+
+.upper-info-box .property-info li i {
+	position: absolute;
+	top: 0;
+	font-size: 24px;
+	line-height: 40px;
+}
+
+.property-detail .upper-box{
+	position: relative;
+	margin-bottom: 40px;
+}
+
+.property-detail .carousel-outer {
+	position: relative;
+}
+
+.property-detail .carousel-outer .image-carousel {
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.property-detail .carousel-outer .thumbs-carousel {
+	position: relative;
+	max-width: 770px;
+	margin: 0 auto;
+}
+
+.property-detail .thumbs-carousel .owl-nav {
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	margin-top: -15px;
+}
+
+.property-detail .image-carousel .owl-prev,
+.property-detail .image-carousel .owl-next {
+	position: absolute;
+	top: 50%;
+	width: 30px;
+	height: 30px;
+	font-size: 12px;
+	line-height: 30px;
+	border-radius: 50%;
+	color: #333;
+	background-color: #fff;
+	font-weight: 400;
+	-webkit-transition: all 300ms ease;
+	-moz-transition: all 300ms ease;
+	-ms-transition: all 300ms ease;
+	-o-transition: all 300ms ease;
+	transition: all 300ms ease;
+}
+
+.property-detail .image-carousel .owl-prev:hover,
+.property-detail .image-carousel .owl-next:hover{
+	color: #F26C61;
+}
+
+.property-detail .image-carousel .owl-prev span,
+.property-detail .image-carousel .owl-next span {
+	position: relative;
+	top: 1px;
+}
+
+
+
+/*start media queries****/
+@media only screen and (max-width: 575px) {
+	.property-detail .image-carousel .owl-prev,
+	.property-detail .image-carousel .owl-next {
+		width: 20px;
+		height: 20px;
+		font-size: 10px;
+	}
+
+	.property-detail .image-carousel .owl-prev span,
+	.property-detail .image-carousel .owl-next span {
+		top: -3px;
+	}
+}
+/*end media queries****/

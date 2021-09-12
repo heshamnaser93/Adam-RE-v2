@@ -1,0 +1,19 @@
+/*start forget pas*/
+@media only screen and (min-width: 768px) {
+    #forget-password {
+        padding-top: 150px !important;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #forget-password {
+        padding-top: 170px !important;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    #forget-password {
+        padding-top: 100px !important;
+    }
+}
+/*end forget pas*/

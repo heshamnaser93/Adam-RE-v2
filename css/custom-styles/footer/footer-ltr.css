@@ -1,0 +1,23 @@
+/*start footer*/
+.footer-wrapper.v1 .footer-top-area .footer-content .title,
+.footer-content li {
+    text-align: left;
+}
+
+.footer-top-area .footer-content .links a:first-child {
+    margin-right: 10px;
+}
+
+.footer-top-area .footer-content .links a:last-child {
+    margin-left: 10px;
+}
+
+.footer-top-area .social-buttons li:first-child {
+    padding-left: 0;
+    padding-right: 10px;
+}
+
+.footer-top-area .social-buttons li:last-child {
+    padding-right: 0;
+}
+/*end footer*/

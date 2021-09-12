@@ -1,0 +1,28 @@
+/***
+====================================================================
+		Property Detail
+====================================================================
+***/
+
+.upper-info-box .property-info li i {
+    right: 0;
+}
+
+.property-detail .thumbs-carousel .owl-nav {
+    right: 0;
+}
+
+.property-detail .image-carousel .owl-prev,
+.property-detail .image-carousel .owl-next {
+    right: 20px;
+}
+
+.property-detail .image-carousel .owl-next{
+    right: auto;
+    left: 20px;
+}
+
+.property-detail .image-carousel .owl-prev span,
+.property-detail .image-carousel .owl-next span {
+    right: 10px;
+}

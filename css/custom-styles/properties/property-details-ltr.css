@@ -1,0 +1,128 @@
+/*gallery*/
+.slick-slider .slick-prev:hover,
+.slick-slider .slick-next:hover {
+    opacity: .65;
+}
+
+.slick-slider .slick-prev {
+    left: 40px;
+}
+
+.slick-slider .slick-next {
+    right: 40px;
+}
+
+#gallery .product-images .thumb-nav.slick-slider .slick-prev {
+    margin-left: -30px;
+}
+
+#gallery .product-images .thumb-nav.slick-slider .slick-next {
+    margin-right: -30px;
+}
+/*gallery*/
+
+
+/*start list details hero*/
+.single-listing-title p i,
+.property-author img {
+    margin-left: 0;
+    margin-right: 5px;
+}
+
+.per_sale {
+    padding-right: 20px;
+    padding-left: 0;
+}
+
+.list-btn li:first-child {
+    margin-right: 5px;
+}
+
+.per_sale:after {
+    left: auto;
+    right: 5px;
+}
+
+.list-details-btn .share-btn {
+    margin: 0;
+}
+/*end list details hero*/
+
+/*start list details info*/
+.moon-ico {
+    margin-right: 10px;
+}
+
+/*plans*/
+#accordion10 .card .card-header i {
+    margin-right: 10px;
+}
+/*end list details info*/
+
+
+/*start booking form*/
+#datepicker-from span, #datepicker-to span {
+    left: auto;
+    right: 4%;
+}
+/*end booking form*/
+
+
+/*start similar listing*/
+.similar-listing .section-title.v2 {
+    text-align: left;
+}
+/*end similar listing*/
+
+
+/*start media queries***********/
+@media screen and (min-width: 1200px) {
+    .similar-next {
+        left: auto;
+        right: -25px;
+    }
+
+    .similar-prev {
+        right: auto;
+        left: -25px;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .similar-next {
+        right: auto;
+        left: 50%;
+        margin-left: 15px;
+    }
+
+    .similar-prev {
+        left: auto;
+        right: 50%;
+        margin-right: 15px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .list-details-title .list-details-btn {
+        text-align: left !important;
+    }
+
+    .side-popup {
+        left: 5.5%;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .slick-slider .slick-prev {
+        left: 20px;
+    }
+
+    .slick-slider .slick-next {
+        right: 20px;
+    }
+
+    .list-details-tab .nav-item {
+        margin-left: 0;
+    }
+}
+/*end media queries***********/

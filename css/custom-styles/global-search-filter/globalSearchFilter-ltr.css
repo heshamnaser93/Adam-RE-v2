@@ -1,0 +1,45 @@
+/*start*/
+.listing-filter input[type="text"] {
+    padding: 4px 15px 0 40px;
+}
+
+.global-filter-form .input-search:before {
+    left: 30px;
+}
+
+.hero__form.v1 .dropdown-filter span:before {
+    right: -25px;
+    left: auto;
+}
+/*end*/
+
+
+
+/*start media queries*****/
+@media screen and (min-width: 1200px) {
+    .global-filter-form .input-search {
+        padding: 0 10px 0 20px;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .global-filter-form .input-search:before {
+        left: 20px;
+    }
+
+    .hero__form.v1.filter.listing-filter .dropdown-filter {
+        margin-left: 0;
+        margin-right: 25px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .hero__form.v1 .dropdown-filter span:before {
+        right: -15px;
+    }
+
+    .hero__form.v1.filter.listing-filter .dropdown-filter {
+        margin-right: 30px;
+    }
+}
+/*end media queries*****/
